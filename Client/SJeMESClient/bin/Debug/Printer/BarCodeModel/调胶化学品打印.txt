@@ -1,0 +1,2 @@
+﻿chemical_name￥medicament_name￥reagent_proportion￥corresponding_humidity￥id￥g_mixing_time￥effective_time
+NP 73KN￥E 1003RN￥2￥90°以上￥1vR+NyhKrY2Ld1/TLykCSg==￥2022/5/16 11:28:03￥2022/5/16 13:28:03

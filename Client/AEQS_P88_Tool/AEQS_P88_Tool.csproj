@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E423A83-5543-4B90-8E53-B3C787C3B542}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AEQS_P88_Tool</RootNamespace>
+    <AssemblyName>AEQS_P88_Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\Aspose.Cells.DLL</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="AutocompleteMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MES_WMS\KZ_MES\CuttingAllocation\bin\Debug\AutocompleteMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="ESBasic">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\ESBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="GDSJ_Framework">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\GDSJ_Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\library\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Production_Material_Issue\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OMCS">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\OMCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES_Framework">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\AEQS_P88_Tool\bin\Debug\SJeMES_Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMainToolP88.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainToolP88.Designer.cs">
+      <DependentUpon>frmMainToolP88.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToolMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToolMain.Designer.cs">
+      <DependentUpon>FrmToolMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
+    <Compile Include="JsonMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JsonMessage.Designer.cs">
+      <DependentUpon>JsonMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMainToolP88.resx">
+      <DependentUpon>frmMainToolP88.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToolMain.resx">
+      <DependentUpon>FrmToolMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JsonMessage.resx">
+      <DependentUpon>JsonMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ic_select_24.png" />
+    <None Include="Resources\ic_upload_file_241.png" />
+    <None Include="Resources\ic_select_241.png" />
+    <Content Include="Resources\ic_upload_file_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SJeMES_Control_Library\SJeMES_Control_Library.csproj">
+      <Project>{6f45dc55-17d1-4409-ac39-f73d789b078d}</Project>
+      <Name>SJeMES_Control_Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

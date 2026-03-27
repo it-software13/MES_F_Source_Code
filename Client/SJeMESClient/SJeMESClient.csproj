@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9AA6A7F-0E6B-4AB6-AE3F-8E78AF4FE060}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SJeMESClient</RootNamespace>
+    <AssemblyName>SJeMESClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KaizenForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KaizenForm\bin\Debug\KaizenForm.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMESSystemTools\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebApi\AEQS_P88API\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Production_Material_Issue">
+      <HintPath>..\Production_Material_Issue\bin\Debug\Production_Material_Issue.dll</HintPath>
+    </Reference>
+    <Reference Include="Quality_Bonus_Evaluation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Quality_Bonus_Evaluation\bin\Debug\Quality_Bonus_Evaluation.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJeMES\bin\Debug\SJeMES.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMESSystemTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJeMESSystemTools\bin\Debug\SJeMESSystemTools.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES_IQC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJeMES_IQC\bin\Debug\SJeMES_IQC.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES_TQC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJeMES_TQC\bin\Debug\SJeMES_TQC.dll</HintPath>
+    </Reference>
+    <Reference Include="SJEMS_QX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJEMS_QX\bin\Debug\SJEMS_QX.dll</HintPath>
+    </Reference>
+    <Reference Include="Sterilization_Alert">
+      <HintPath>..\Sterilization_Alert\bin\Debug\Sterilization_Alert.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserSetting.Designer.cs">
+      <DependentUpon>frmUserSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHelper.cs" />
+    <Compile Include="MenuHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\SJ_WebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserSetting.resx">
+      <DependentUpon>frmUserSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="uploadLauncher\SJeMES Launcher.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\SJ_WebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SJ_WebService\SJ-WebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AEQS_P88_Tool\AEQS_P88_Tool.csproj">
+      <Project>{8e423a83-5543-4b90-8e53-b3c787c3b542}</Project>
+      <Name>AEQS_P88_Tool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GDSJ_Framework\GDSJ_Framework.csproj">
+      <Project>{ae982efc-40d6-4a74-8fdd-befa8bd4e4ae}</Project>
+      <Name>GDSJ_Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_AQL\SJeMES_AQL.csproj">
+      <Project>{921144aa-4888-4260-8a3c-eee68e2fc757}</Project>
+      <Name>SJeMES_AQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_BDM\SJeMES_BDM.csproj">
+      <Project>{8b0ef8f9-5e44-4ac2-903d-6efc68226ad9}</Project>
+      <Name>SJeMES_BDM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_Control_Library\SJeMES_Control_Library.csproj">
+      <Project>{6f45dc55-17d1-4409-ac39-f73d789b078d}</Project>
+      <Name>SJeMES_Control_Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_Framework\SJeMES_Framework.csproj">
+      <Project>{6a483c7a-92e1-4a65-a5fd-ecb5f4930373}</Project>
+      <Name>SJeMES_Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_QA\SJeMES_QA.csproj">
+      <Project>{05d8899c-d5fd-4155-914f-3744f5a21ad5}</Project>
+      <Name>SJeMES_QA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_QCM\SJeMES_QCM.csproj">
+      <Project>{0ddadcc0-5664-4ca3-b783-7a36310b29c0}</Project>
+      <Name>SJeMES_QCM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_QCM_Ex\SJeMES_QCM_Ex.csproj">
+      <Project>{927fd119-8e64-45e8-a4e1-1a3d963e5533}</Project>
+      <Name>SJeMES_QCM_Ex</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_QCM_Inspection\SJeMES_QCM_Inspection.csproj">
+      <Project>{0b0b0121-cbe8-4f29-993a-260101546e7d}</Project>
+      <Name>SJeMES_QCM_Inspection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_QCM_KanBan\SJeMES_QCM_KanBan.csproj">
+      <Project>{4a1fa238-2d08-4adc-b2f1-427af81c57bd}</Project>
+      <Name>SJeMES_QCM_KanBan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_SM\SJeMES_SM.csproj">
+      <Project>{428e982a-e865-463b-9278-1cbc12045733}</Project>
+      <Name>SJeMES_SM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_TSM\SJeMES_TSM.csproj">
+      <Project>{88a74484-c884-452f-a9e1-ab1b73bd700b}</Project>
+      <Name>SJeMES_TSM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_User\SJeMES_User.csproj">
+      <Project>{46366cdd-26d8-449b-9d30-727945219606}</Project>
+      <Name>SJeMES_User</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_ZL_KanBan\SJeMES_ZL_KanBan.csproj">
+      <Project>{8bd59e33-cd82-49ab-8099-49a765957e86}</Project>
+      <Name>SJeMES_ZL_KanBan</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\icon_add_24_g.png" />
+    <Content Include="icon\icon_aduit_24.png" />
+    <Content Include="icon\icon_back_24.png" />
+    <Content Include="icon\icon_close_32.png" />
+    <Content Include="icon\icon_delete_24_r.png" />
+    <Content Include="icon\icon_dosure_24.png" />
+    <Content Include="icon\icon_edit_24_b.png" />
+    <Content Include="icon\icon_language.png" />
+    <Content Include="icon\icon_login_32.png" />
+    <Content Include="icon\icon_org.png" />
+    <Content Include="icon\icon_password.png" />
+    <Content Include="icon\icon_save_24.png" />
+    <Content Include="icon\icon_selectmore_24.png" />
+    <Content Include="icon\icon_select_24.png" />
+    <Content Include="icon\icon_select_32.png" />
+    <Content Include="icon\icon_user.png" />
+    <Content Include="icon\menu_Base.png" />
+    <Content Include="icon\menu_Console.png" />
+    <Content Include="icon\menu_CRM.png" />
+    <Content Include="icon\menu_DMS.png" />
+    <Content Include="icon\menu_MES.png" />
+    <Content Include="icon\menu_QMS.png" />
+    <Content Include="icon\menu_SYS.png" />
+    <Content Include="icon\menu_User.png" />
+    <Content Include="icon\menu_WMS.png" />
+    <Content Include="logo.ico" />
+    <Content Include="uploadLauncher\SJeMES Launcher.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web References\SJ_WebService\SJ-WebService.disco" />
+    <None Include="login_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://112.74.49.34:8080/SJ-WebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SJ_WebService\</RelPath>
+      <UpdateFromURL>http://112.74.49.34:8080/SJ-WebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SJeMESClient_SJ_WebService_SJ_WebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties config_1json__JsonSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

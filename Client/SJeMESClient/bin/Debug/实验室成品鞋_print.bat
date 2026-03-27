@@ -1,0 +1,1 @@
+Printer\BarCodeModel\bartend.exe /F=LabShoes.btw /P /X

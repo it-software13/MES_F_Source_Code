@@ -1,0 +1,36 @@
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.ColorExtension: type is sealed.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.TextShade: type is a value type.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Primary: type is a value type.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Accent: type is a value type.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.DrawHelper: type is sealed.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.MouseState: type is a value type.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.MaterialSkinManager: type has no family visible contructors.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Properties.Resources: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Controls.MaterialToolStripRender: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Controls.MaterialDivider: type is sealed.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Animations.AnimationDirection: type is a value type.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Animations.AnimationManager: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Animations.AnimationType: type is a value type.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Animations.AnimationLinear: type is sealed.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Animations.AnimationEaseInOut: type is sealed.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Animations.AnimationEaseOut: type is sealed.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate stub for MaterialSkin.Animations.AnimationCustomQuadratic: type is sealed.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.TextShade: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Primary: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Accent: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.DrawHelper: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.IMaterialControl: type is an interface.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.MouseState: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.MaterialSkinManager+Themes: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Properties.Resources: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Controls.MaterialContextMenuStrip+ItemClickStart: type is a delegate.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Controls.MaterialToolStripRender: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Controls.MaterialForm+ButtonState: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Controls.MaterialForm+ResizeDirection: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Controls.MaterialSingleLineTextField+BaseTextBox: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Controls.MaterialSingleLineTextField+TextBoxContextMenuStrip: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Animations.AnimationDirection: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Animations.AnimationManager: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Animations.AnimationType: type is an enum.
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Animations.AnimationLinear: type is not visible to exported or assembly(MaterialSkin.Fakes).
+D:\TFS_Source_Code\AEQS\Client\SJeMES\Fakes\MaterialSkin.fakes : warning : Cannot generate shim for MaterialSkin.Animations.AnimationEaseInOut: type is not visible to exported or assembly(MaterialSkin.Fakes).

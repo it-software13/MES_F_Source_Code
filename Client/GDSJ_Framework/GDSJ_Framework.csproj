@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE982EFC-40D6-4A74-8FDD-BEFA8BD4E4AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GDSJ_Framework</RootNamespace>
+    <AssemblyName>GDSJ_Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\GDSJ_Framework\bin\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\GDSJ_Framework\bin\Debug\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Web">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\GDSJ_Framework\bin\Debug\FastReport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\GDSJ_Framework\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\OrgClass.cs" />
+    <Compile Include="Class\UserClass.cs" />
+    <Compile Include="Common\ConfigHelper.cs" />
+    <Compile Include="Common\IOHelper.cs" />
+    <Compile Include="Common\JsonHelper.cs" />
+    <Compile Include="Common\OtherPrograms.cs" />
+    <Compile Include="Common\PCSystem.cs" />
+    <Compile Include="Common\RASHelper.cs" />
+    <Compile Include="Common\Security.cs" />
+    <Compile Include="Common\StringHelper.cs" />
+    <Compile Include="Common\TXTHelper.cs" />
+    <Compile Include="Common\WebServiceHelper.cs" />
+    <Compile Include="DBHelper\Access.cs" />
+    <Compile Include="DBHelper\DataBase.cs" />
+    <Compile Include="DBHelper\DataBaseAccess.cs" />
+    <Compile Include="DBHelper\Excel.cs" />
+    <Compile Include="DBHelper\InsertData.cs" />
+    <Compile Include="DBHelper\MySql.cs" />
+    <Compile Include="DBHelper\Oracle.cs" />
+    <Compile Include="DBHelper\SqlServer.cs" />
+    <Compile Include="Printer\frmBarCodePrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer\frmBarCodePrinter.Designer.cs">
+      <DependentUpon>frmBarCodePrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\PrintBarCodeHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SJ_WebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebServer\HttpProcessor.cs" />
+    <Compile Include="WebServer\RequestInfo.cs" />
+    <Compile Include="WebServer\SimpleHost.cs" />
+    <Compile Include="WebServer\WebServer.cs" />
+    <Compile Include="WebServer\WorkerRequest.cs" />
+    <Compile Include="WinForm\CommonControls\MenuItemV1.cs" />
+    <Compile Include="WinForm\CommonControls\MenuItemV2.cs" />
+    <Compile Include="WinForm\CommonControls\MenuV1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonControls\MenuV1.Designer.cs">
+      <DependentUpon>MenuV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\CommonControls\MenuV3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonControls\MenuV3.Designer.cs">
+      <DependentUpon>MenuV3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\CommonControls\MenuV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonControls\MenuV2.Designer.cs">
+      <DependentUpon>MenuV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\FrmAdvancedSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\FrmAdvancedSearch.Designer.cs">
+      <DependentUpon>FrmAdvancedSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmBodyQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmBodyQuery.Designer.cs">
+      <DependentUpon>frmBodyQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmDBSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmDBSetting.designer.cs">
+      <DependentUpon>frmDBSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmSelectData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmSelectData.Designer.cs">
+      <DependentUpon>frmSelectData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmSearchData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\CommonForm\frmSearchData.Designer.cs">
+      <DependentUpon>frmSearchData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\FrmAddControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\FrmAddControl.Designer.cs">
+      <DependentUpon>FrmAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\frmFastReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\frmFastReport.Designer.cs">
+      <DependentUpon>frmFastReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\FrmReportMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\FrmReportMain.Designer.cs">
+      <DependentUpon>FrmReportMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\frmReportSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FastReportForm\frmReportSetting.Designer.cs">
+      <DependentUpon>frmReportSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FormDesign\Control\ButtonClass.cs" />
+    <Compile Include="WinForm\FormDesign\Control\ControlClass.cs" />
+    <Compile Include="WinForm\FormDesign\Control\DataViewClass.cs" />
+    <Compile Include="WinForm\FormDesign\Control\DataViewColumnClass.cs" />
+    <Compile Include="WinForm\FormDesign\Control\FunButtonClass.cs" />
+    <Compile Include="WinForm\FormDesign\Control\PageControlClass.cs" />
+    <Compile Include="WinForm\FormDesign\Control\TextBoxClass.cs" />
+    <Compile Include="WinForm\FormDesign\Control\ToolsBarClass.cs" />
+    <Compile Include="WinForm\FormDesign\FormPanel\BodyPanelClass.cs" />
+    <Compile Include="WinForm\FormDesign\FormPanel\FormPanelClass.cs" />
+    <Compile Include="WinForm\FormDesign\FormPanel\HeadPanelClass.cs" />
+    <Compile Include="WinForm\FormDesign\Forms\DataSourceClass.cs" />
+    <Compile Include="WinForm\FormDesign\Forms\FormBodyEditAndAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FormDesign\Forms\FormBodyEditAndAdd.Designer.cs">
+      <DependentUpon>FormBodyEditAndAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FormDesign\Forms\FormClass.cs" />
+    <Compile Include="WinForm\FormDesign\Forms\FormDesignTMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FormDesign\Forms\FormDesignTMP.Designer.cs">
+      <DependentUpon>FormDesignTMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FormDesign\Forms\TableClass.cs" />
+    <Compile Include="WinForm\FormXML\Control\ControlClass.cs" />
+    <Compile Include="WinForm\FormXML\Control\DataViewClass.cs" />
+    <Compile Include="WinForm\FormXML\Control\DataViewColumnClass.cs" />
+    <Compile Include="WinForm\FormXML\Control\FunButtonClass.cs" />
+    <Compile Include="WinForm\FormXML\Control\TextBoxClass.cs" />
+    <Compile Include="WinForm\FormXML\Forms\DataSourceClass.cs" />
+    <Compile Include="WinForm\FormXML\Forms\FormClass.cs" />
+    <Compile Include="WinForm\FormXML\Forms\FormHB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FormXML\Forms\FormHB.Designer.cs">
+      <DependentUpon>FormHB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FormXML\Forms\FormH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\FormXML\Forms\FormH.Designer.cs">
+      <DependentUpon>FormH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\FormXML\FormPanel\BodyPanelClass.cs" />
+    <Compile Include="WinForm\FormXML\FormPanel\FormPanelClass.cs" />
+    <Compile Include="WinForm\FormXML\FormPanel\HeadPanelClass.cs" />
+    <Compile Include="WinForm\FormXML\Forms\TableClass.cs" />
+    <Compile Include="WinForm\CommonControls\MenuItemV3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FastReport.Bars.dll" />
+    <Content Include="FastReport.dll" />
+    <Content Include="FastReport.Web.dll" />
+    <Content Include="ICON\Grey\first-page.png" />
+    <Content Include="ICON\Grey\icon_add.png" />
+    <Content Include="ICON\Grey\icon_compile.png" />
+    <Content Include="ICON\Grey\icon_delete.png" />
+    <Content Include="ICON\Grey\icon_discovery.png" />
+    <Content Include="ICON\Grey\icon_dispose.png" />
+    <Content Include="ICON\Grey\icon_refresh.png" />
+    <Content Include="ICON\Grey\icon_search.png" />
+    <Content Include="ICON\Grey\icon_shield.png" />
+    <Content Include="ICON\Grey\icon_workmore.png" />
+    <Content Include="ICON\Grey\last-page.png" />
+    <Content Include="ICON\Grey\next.png" />
+    <Content Include="ICON\Grey\return.png" />
+    <Content Include="ICON\Grey\save.png" />
+    <Content Include="ICON\Grey\打印.png" />
+    <Content Include="ICON\White\first-page.png" />
+    <Content Include="ICON\White\icon_add.png" />
+    <Content Include="ICON\White\icon_compile.png" />
+    <Content Include="ICON\White\icon_delete.png" />
+    <Content Include="ICON\White\icon_discovery.png" />
+    <Content Include="ICON\White\icon_dispose.png" />
+    <Content Include="ICON\White\icon_refresh.png" />
+    <Content Include="ICON\White\icon_search.png" />
+    <Content Include="ICON\White\icon_shield.png" />
+    <Content Include="ICON\White\icon_workmore.png" />
+    <Content Include="ICON\White\last-page.png" />
+    <Content Include="ICON\White\next.png" />
+    <Content Include="ICON\White\print.png" />
+    <Content Include="ICON\White\return.png" />
+    <Content Include="ICON\White\save.png" />
+    <Content Include="Printer\BarCodeModel\AwChs.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\AwEnu.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\bartend.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\BarTender.tlb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\BtChs.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\BtEnu.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\btpvdt6.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\BtwConv.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\CMDGC.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\CnEng.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\dbghelp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\FontAliasing.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\haspds_windows.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31BMP.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31DXF.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31EPS.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31fpx.dil">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31IMG.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31JPG.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31pcd.dil">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31PCX.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31PNG.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31TGA.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31TIF.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31WMF.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31WPG.DIL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31XBMP.DEL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31XDCX.DEL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31XEPS.DEL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31XJPG.DEL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31XPCX.DEL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31xpng.del">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\IM31XTIF.DEL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\imgman32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\LOTTM.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\LOTTM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\LOTTM.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\LOTTM_2.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\LOTTM_2.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\LOTTM_2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\mfg.stk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\PKTM.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\PKTM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\PKTM.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\PKTM2.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\PKTM2.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\PKTM2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\PrinterTemplate.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\RegVbs.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\SNTM.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\SNTM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\SNTM.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\SNTM_2.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\SNTM_2.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\SNTM_2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\库位条码.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\库位条码.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\物料条码.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\物料条码.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WinForm\FormDesign\Forms\FormDesign.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="PKTM2_print.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PKTM2.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PKTM_print.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PKTM.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LOTTM_print.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LOTTM_2_print.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LOTTM.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LOTTM_2.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\物料条码.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="物料条码.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="物料条码_print.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printer\BarCodeModel\库位条码.BTW">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="SNTM_print.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SNTM_2_print.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SNTM_2.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SNTM.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web References\SJ_WebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SJ_WebService\SJ-WebService.disco" />
+    <None Include="Web References\SJ_WebService\SJ-WebService.wsdl" />
+    <Content Include="库位条码.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="库位条码_print.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Printer\frmBarCodePrinter.resx">
+      <DependentUpon>frmBarCodePrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonControls\MenuV1.resx">
+      <DependentUpon>MenuV1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonControls\MenuV3.resx">
+      <DependentUpon>MenuV3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonControls\MenuV2.resx">
+      <DependentUpon>MenuV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonForm\FrmAdvancedSearch.resx">
+      <DependentUpon>FrmAdvancedSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonForm\frmBodyQuery.resx">
+      <DependentUpon>frmBodyQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonForm\frmDBSetting.resx">
+      <DependentUpon>frmDBSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonForm\frmSelectData.resx">
+      <DependentUpon>frmSelectData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\CommonForm\frmSearchData.resx">
+      <DependentUpon>frmSearchData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FastReportForm\FrmAddControl.resx">
+      <DependentUpon>FrmAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FastReportForm\frmFastReport.resx">
+      <DependentUpon>frmFastReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FastReportForm\FrmReportMain.resx">
+      <DependentUpon>FrmReportMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FastReportForm\frmReportSetting.resx">
+      <DependentUpon>frmReportSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FormDesign\Forms\FormBodyEditAndAdd.resx">
+      <DependentUpon>FormBodyEditAndAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FormDesign\Forms\FormDesignTMP.resx">
+      <DependentUpon>FormDesignTMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FormXML\Forms\FormHB.resx">
+      <DependentUpon>FormHB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\FormXML\Forms\FormH.resx">
+      <DependentUpon>FormH.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/商基网络WebService服务/SJ-WebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SJ_WebService\</RelPath>
+      <UpdateFromURL>http://localhost/商基网络WebService服务/SJ-WebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>GDSJ_Framework_SJ_WebService_SJ_WebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SJeMES_Framework\SJeMES_Framework.csproj">
+      <Project>{6a483c7a-92e1-4a65-a5fd-ecb5f4930373}</Project>
+      <Name>SJeMES_Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

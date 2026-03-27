@@ -1,0 +1,1 @@
+Printer\BarCodeModel\bartend.exe /F=Printer\BarCodeModel\出货确认鞋条码打印.btw  /P /X

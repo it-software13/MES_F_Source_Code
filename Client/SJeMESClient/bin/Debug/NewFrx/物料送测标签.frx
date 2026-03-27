@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/27/2019 11:51:39" ReportInfo.Modified="12/16/2025 15:28:07" ReportInfo.CreatorVersion="2014.4.8.0">
+  <Dictionary>
+    <OdbcDataConnection Name="APEMES" ConnectionString="rijcmlq6iAzCLvnX8BEz969dQJVNmZC2JUYdEA++acjYODEpsJBdAUb0UnFkf5DMnTnE+u4xAzBVDF4Hw+pCWNyrPqSvKmqBCohH2KUjHR0O7ZWKkTNZc4Wh6y6NoTg89aO978sZpBDOODIm7MZjLddhzl4N11jZeKKkGidkK60X5LJBdJk6iE9prAbQKeoPONpT61/j51sf2Gk8v4vtnrZmVfIbmFEJIMPyZX/VnyS2rA1eDg7RAX7f1vDT+uP39jyMm5FGXgAdNurHdLEG5OhFCRrfd70l3GJ4i90P6TvRL2lacmpPk0XY46wGKRJ41ewmPaJEgULbQkzCf6yFzDVoudVOdbXnKH/orjttWgP63Pgvv0=">
+      <TableDataSource Name="Table" DataType="System.Int32" Enabled="true" SelectCommand="SELECT DISTINCT  b.suppliers_code,&#13;&#10;                 i.item_no,&#13;&#10;                 m.stoc_no,&#13;&#10;                 m.source_no AS ORDER_NO,&#13;&#10;                 GF_Shoe_Name(GF_ARTNO(m.source_no, i.order_seq)) AS Shoe_Name,&#13;&#10;                 GF_Art_Name(GF_ARTNO(m.source_no, i.order_seq)) AS Art_Name,&#13;&#10;                 GF_ARTNO(m.source_no, i.order_seq) AS ART_NO,&#13;&#10;                 GF_Ord_Qty(d.source_no, d.chk_seq) AS Ord_Qty,&#13;&#10;                 b.SUPPLIERS_NAME,&#13;&#10;                 d.item_no AS Material_No,&#13;&#10;                 e.name_t AS Material_Name,&#13;&#10;                 i.part_no,&#13;&#10;                 to_char(SYSDATE, 'yyyy/MM/dd') AS TodayDate,&#13;&#10;                 m.org_id,&#13;&#10;                 GF_Ord_Qty(d.source_no, d.chk_seq) AS QtyStr,&#13;&#10;                 '' AS Shoe_NameAndArt_No,&#13;&#10;                 '' AS ORDER_NOAndQty&#13;&#10;               FROM wms_rcpt_m m&#13;&#10;              INNER JOIN wms_rcpt_d d&#13;&#10;                 ON m.chk_no = d.chk_no&#13;&#10;              INNER JOIN bdm_purchase_order_item i&#13;&#10;                 ON d.source_no = i.order_no&#13;&#10;                AND d.chk_seq = i.order_seq&#13;&#10;              INNER JOIN base003m b&#13;&#10;                 ON b.SUPPLIERS_CODE = m.vend_no&#13;&#10;              INNER JOIN bdm_rd_item e&#13;&#10;                 ON e.item_no = d.item_no">
+        <Column Name="SUPPLIERS_CODE" DataType="System.String"/>
+        <Column Name="ITEM_NO" DataType="System.String"/>
+        <Column Name="STOC_NO" DataType="System.String"/>
+        <Column Name="ORDER_NO" DataType="System.String"/>
+        <Column Name="SHOE_NAME" DataType="System.String"/>
+        <Column Name="ART_NAME" DataType="System.String"/>
+        <Column Name="ART_NO" DataType="System.String"/>
+        <Column Name="ORD_QTY" DataType="System.String"/>
+        <Column Name="SUPPLIERS_NAME" DataType="System.String"/>
+        <Column Name="MATERIAL_NO" DataType="System.String"/>
+        <Column Name="MATERIAL_NAME" DataType="System.String"/>
+        <Column Name="ORG_ID" DataType="System.String"/>
+        <Column Name="QTYSTR" DataType="System.String"/>
+        <Column Name="PART_NO" DataType="System.String"/>
+        <Column Name="TODAYDATE" DataType="System.String"/>
+        <Column Name="SHOE_NAMEANDART_NO" DataType="System.String"/>
+        <Column Name="ORDER_NOANDQTY" DataType="System.String"/>
+        <Column Name="SUMQTY" DataType="System.String"/>
+        <Column Name="PRINT" DataType="System.String" PropName="Column"/>
+      </TableDataSource>
+    </OdbcDataConnection>
+    <Parameter Name="wfdw" DataType="System.String"/>
+    <Parameter Name="zl" DataType="System.String"/>
+    <Parameter Name="bjmc" DataType="System.String"/>
+    <Parameter Name="sjxyrq" DataType="System.String"/>
+    <Parameter Name="flrq" DataType="System.String"/>
+    <Parameter Name="flsl" DataType="System.String"/>
+    <Parameter Name="czy" DataType="System.String"/>
+    <Parameter Name="jgdw" DataType="System.String"/>
+    <Parameter Name="xx" DataType="System.String"/>
+    <Parameter Name="ms" DataType="System.String"/>
+    <Parameter Name="sjlc" DataType="System.String"/>
+    <Parameter Name="sjjhrq" DataType="System.String"/>
+    <Parameter Name="jhsl" DataType="System.String"/>
+    <Parameter Name="jyy" DataType="System.String"/>
+    <Parameter Name="zdyzd1" DataType="System.String"/>
+    <Parameter Name="zdyzd2" DataType="System.String"/>
+    <Parameter Name="zdyzd3" DataType="System.String"/>
+    <Parameter Name="zdyzd4" DataType="System.String"/>
+    <Parameter Name="zdyzd5" DataType="System.String"/>
+    <Parameter Name="zdyzd6" DataType="System.String"/>
+    <Parameter Name="BarCode" DataType="System.String"/>
+  </Dictionary>
+  <ReportPage Name="Page2" PaperWidth="95" PaperHeight="135" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" FirstPageSource="15" OtherPagesSource="15" Guides="708.75">
+    <ReportTitleBand Name="ReportTitle1" Width="359.1" Guides="160.65,160.65"/>
+    <DataBand Name="Data2" Top="4" Width="359.1" Height="491.4" CanGrow="true" CanShrink="true" Columns.Count="1" KeepDetail="true">
+      <TableObject Name="Table1" Left="18.85" Top="19.79" Width="315.66" Height="451.03" Border.Lines="All">
+        <TableColumn Name="Column1" Width="140.83"/>
+        <TableColumn Name="Column2" Width="174.83"/>
+        <TableRow Name="Row8" Height="99.27">
+          <TableCell Name="Cell56" Font="SimSun, 9pt" ColSpan="2">
+            <TextObject Name="Text9" Top="9.45" Width="113.4" Height="18.9" Text="[Table.TODAYDATE]" Font="SimSun, 9pt"/>
+            <BarcodeObject Name="Barcode1" Left="189" Top="0.38" Width="117.18" Height="117.18" AutoSize="false" Text="[Table.PRINT]" ShowText="false" AllowExpressions="true" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="true"/>
+          </TableCell>
+          <TableCell Name="Cell57" Font="SimSun, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="63.05">
+          <TableCell Name="Cell6" Border.Lines="All" Text="材料名称/料号：[Table.MATERIAL_NO]&#13;&#10;MATERIAL NAME/MATERIAL_NO：&#13;&#10;[Table.MATERIAL_NAME]" VertAlign="Center" Font="SimSun, 6.75pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell51" Font="SimSun, 8pt"/>
+        </TableRow>
+        <TableRow Name="Row4" Height="32.8">
+          <TableCell Name="Cell44" Border.Lines="All" Text="鞋型/Art No：Model No/Art No：[Table.SHOE_NAMEANDART_NO]" Font="SimSun, 6.75pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell52" Font="SimSun, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row5" Height="129.51">
+          <TableCell Name="Cell46" Border.Lines="All" Text="订单号/数量,全部的： &#13;&#10;PO NO/Quantity：[Table.ORDER_NOANDQTY]&#13;&#10;Total:[Table.SUMQTY]" Font="SimSun, 6.75pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell53" Font="SimSun, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row6" Height="63.35">
+          <TableCell Name="Cell48" Border.Lines="All" Text="所用部位名称：  &#13;&#10;Part Name：[Table.PART_NO]" Font="SimSun, 8pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell54" Font="SimSun, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row7" Height="63.05">
+          <TableCell Name="Cell50" Border.Lines="All" Text="厂商：[Table.SUPPLIERS_NAME]&#13;&#10;Supplier：" Font="SimSun, 8pt, style=Bold"/>
+          <TableCell Name="Cell55" Text="检验员签名：&#13;&#10;Inspector Sign：" Font="SimSun, 9pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+      <TextObject Name="Text4" Top="387.45" Width="18.9" Height="18.9" Text="B" Font="SimSun, 9pt"/>
+      <LineObject Name="Line1" Left="9.45" Top="415.8" Height="75.6"/>
+      <LineObject Name="Line2" Left="9.45" Top="481.95" Width="66.15"/>
+      <TextObject Name="Text1" Left="-274.05" Top="56.7" Width="708.75" Height="18.9" Text="物料送测标签" HorzAlign="Center" Font="SimSun, 12pt, style=Bold"/>
+      <TextObject Name="Text3" Left="85.05" Top="472.5" Width="18.9" Height="18.9" Text="A" Font="SimSun, 9pt"/>
+      <TextObject Name="Text2" Left="160.65" Top="472.5" Width="198.45" Height="18.9" Text="QIP/APP/19/00/00-APPENDIX-19" Font="SimSun, 9pt"/>
+      <TextObject Name="Text10" Left="-9.45" Top="75.6" Width="217.35" Height="18.9" Text="Lable For Physical Test" HorzAlign="Center" Font="SimSun, 9pt, style=Bold"/>
+    </DataBand>
+  </ReportPage>
+</Report>

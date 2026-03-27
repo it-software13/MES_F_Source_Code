@@ -1,0 +1,2 @@
+﻿PROD_NO,SHOE_NAME,ATTRIBUTION,qr_code,FOOT
+ID2276,RUNFALCON 3.0 W,inspection room,ID2276;1;90;0;0,left foot

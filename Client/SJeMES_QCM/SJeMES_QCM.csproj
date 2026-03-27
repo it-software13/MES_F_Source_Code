@@ -1,0 +1,973 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DDADCC0-5664-4CA3-B783-7A36310B29C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SJeMES_QCM</RootNamespace>
+    <AssemblyName>SJeMES_QCM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMES_QCM\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMES_QCM\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMES_QCM\bin\Debug\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMES_QCM\bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMES_QCM\bin\Debug\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJeMES_Framework\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APP_Compliance_Print_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APP_Compliance_Print_Edit.Designer.cs">
+      <DependentUpon>APP_Compliance_Print_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileCheck.Designer.cs">
+      <DependentUpon>FileCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileCheckStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileCheckStatus.Designer.cs">
+      <DependentUpon>FileCheckStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAQLBAInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAQLBAInsert.Designer.cs">
+      <DependentUpon>frmAQLBAInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_AQLBAEnteringxw_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_AQLBAEnteringxw_Add.Designer.cs">
+      <DependentUpon>F_QCM_AQLBAEnteringxw_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_AQLBAEntering_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_AQLBAEntering_Main.Designer.cs">
+      <DependentUpon>F_QCM_AQLBAEntering_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ART_File_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ART_File_Detail.Designer.cs">
+      <DependentUpon>F_QCM_ART_File_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File1.Designer.cs">
+      <DependentUpon>F_QCM_ATR_File1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File1_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File1_Edit.Designer.cs">
+      <DependentUpon>F_QCM_ATR_File1_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File2.Designer.cs">
+      <DependentUpon>F_QCM_ATR_File2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File2_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File2_Edit.Designer.cs">
+      <DependentUpon>F_QCM_ATR_File2_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File3.Designer.cs">
+      <DependentUpon>F_QCM_ATR_File3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File3_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ATR_File3_Edit.Designer.cs">
+      <DependentUpon>F_QCM_ATR_File3_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BadReturnAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BadReturnAdd.Designer.cs">
+      <DependentUpon>F_QCM_BadReturnAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BadReturnMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BadReturnMain.Designer.cs">
+      <DependentUpon>F_QCM_BadReturnMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BadReTurn_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BadReTurn_Detail.Designer.cs">
+      <DependentUpon>F_QCM_BadReTurn_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BATCH_PRODUCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BATCH_PRODUCTION.Designer.cs">
+      <DependentUpon>F_QCM_BATCH_PRODUCTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BATCH_PRODUCTION_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BATCH_PRODUCTION_Detail.Designer.cs">
+      <DependentUpon>F_QCM_BATCH_PRODUCTION_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BATCH_PRODUCTION_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BATCH_PRODUCTION_Edit.Designer.cs">
+      <DependentUpon>F_QCM_BATCH_PRODUCTION_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BdmoutqualitylistmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BdmoutqualitylistmSelect.Designer.cs">
+      <DependentUpon>F_QCM_BdmoutqualitylistmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_BdmoutqualitylistmSelect_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_BdmoutqualitylistmSelect_List.Designer.cs">
+      <DependentUpon>F_QCM_BdmoutqualitylistmSelect_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Bdmoutqualitylistm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Bdmoutqualitylistm_Main.Designer.cs">
+      <DependentUpon>F_QCM_Bdmoutqualitylistm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Broken_Needle_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Broken_Needle_Edit.Designer.cs">
+      <DependentUpon>F_QCM_Broken_Needle_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Broken_Needle_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Broken_Needle_List.Designer.cs">
+      <DependentUpon>F_QCM_Broken_Needle_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Broken_Needle_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Broken_Needle_Main.Designer.cs">
+      <DependentUpon>F_QCM_Broken_Needle_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ChecktoolMaintenance_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ChecktoolMaintenance_List.Designer.cs">
+      <DependentUpon>F_QCM_ChecktoolMaintenance_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ChecktoolMaintenance_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ChecktoolMaintenance_Main.Designer.cs">
+      <DependentUpon>F_QCM_ChecktoolMaintenance_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ChemicalPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ChemicalPrint.Designer.cs">
+      <DependentUpon>F_QCM_ChemicalPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_CHEMICAL_CONTAINER_Main .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_CHEMICAL_CONTAINER_Main .Designer.cs">
+      <DependentUpon>F_QCM_CHEMICAL_CONTAINER_Main .cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Chemical_information_create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Chemical_information_create.Designer.cs">
+      <DependentUpon>F_QCM_Chemical_information_create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Chemical_information_create_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Chemical_information_create_Edit.Designer.cs">
+      <DependentUpon>F_QCM_Chemical_information_create_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ComplianceManagement_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ComplianceManagement_Main.Designer.cs">
+      <DependentUpon>F_QCM_ComplianceManagement_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ConfirmShoes_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ConfirmShoes_Add.Designer.cs">
+      <DependentUpon>F_QCM_ConfirmShoes_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ConfirmShoes_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ConfirmShoes_Main.Designer.cs">
+      <DependentUpon>F_QCM_ConfirmShoes_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_CUSTOMER_COMPLAINT_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_CUSTOMER_COMPLAINT_Add.Designer.cs">
+      <DependentUpon>F_QCM_CUSTOMER_COMPLAINT_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_CUSTOMER_COMPLAINT_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_CUSTOMER_COMPLAINT_Detail.Designer.cs">
+      <DependentUpon>F_QCM_CUSTOMER_COMPLAINT_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_CUSTOMER_COMPLAINT_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_CUSTOMER_COMPLAINT_Main.Designer.cs">
+      <DependentUpon>F_QCM_CUSTOMER_COMPLAINT_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_CWAState_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_CWAState_Main.Designer.cs">
+      <DependentUpon>F_QCM_CWAState_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ExternalColorCard_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ExternalColorCard_Add.Designer.cs">
+      <DependentUpon>F_QCM_ExternalColorCard_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ExternalColorCard_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ExternalColorCard_Edit.Designer.cs">
+      <DependentUpon>F_QCM_ExternalColorCard_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ExternalColorCard_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ExternalColorCard_Main.Designer.cs">
+      <DependentUpon>F_QCM_ExternalColorCard_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Filesupload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Filesupload.Designer.cs">
+      <DependentUpon>F_QCM_Filesupload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Filesupload2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Filesupload2.Designer.cs">
+      <DependentUpon>F_QCM_Filesupload2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadEdit.Designer.cs">
+      <DependentUpon>F_QCM_FilesuploadEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadEdit2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadEdit2.Designer.cs">
+      <DependentUpon>F_QCM_FilesuploadEdit2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadSelectArt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadSelectArt.Designer.cs">
+      <DependentUpon>F_QCM_FilesuploadSelectArt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_FilesuploadView.Designer.cs">
+      <DependentUpon>F_QCM_FilesuploadView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Firstarticle_confirm_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Firstarticle_confirm_Add.Designer.cs">
+      <DependentUpon>F_QCM_Firstarticle_confirm_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Firstarticle_confirm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Firstarticle_confirm_Main.Designer.cs">
+      <DependentUpon>F_QCM_Firstarticle_confirm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Inspection_Supervision_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Inspection_Supervision_report.Designer.cs">
+      <DependentUpon>F_QCM_Inspection_Supervision_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Inspection_Supervision_report_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Inspection_Supervision_report_Add.Designer.cs">
+      <DependentUpon>F_QCM_Inspection_Supervision_report_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Inspection_Supervision_report_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Inspection_Supervision_report_Detail.Designer.cs">
+      <DependentUpon>F_QCM_Inspection_Supervision_report_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_InwarehouseAnomalyStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_InwarehouseAnomalyStat.Designer.cs">
+      <DependentUpon>F_QCM_InwarehouseAnomalyStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_LaboratorySampleStorage_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_LaboratorySampleStorage_Add.Designer.cs">
+      <DependentUpon>F_QCM_LaboratorySampleStorage_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_LaboratorySampleStorage_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_LaboratorySampleStorage_Main.Designer.cs">
+      <DependentUpon>F_QCM_LaboratorySampleStorage_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Measuringthenailcorrection_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Measuringthenailcorrection_Main.Designer.cs">
+      <DependentUpon>F_QCM_Measuringthenailcorrection_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Metalinspection_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Metalinspection_Main.Designer.cs">
+      <DependentUpon>F_QCM_Metalinspection_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_PaintedSkinRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_PaintedSkinRecords.Designer.cs">
+      <DependentUpon>F_QCM_PaintedSkinRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_PaintedSkinRecords_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_PaintedSkinRecords_Detail.Designer.cs">
+      <DependentUpon>F_QCM_PaintedSkinRecords_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_PaintedSkinRecords_Detail2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_PaintedSkinRecords_Detail2.Designer.cs">
+      <DependentUpon>F_QCM_PaintedSkinRecords_Detail2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_ProductDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_ProductDelivery.Designer.cs">
+      <DependentUpon>F_QCM_ProductDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Add.Designer.cs">
+      <DependentUpon>F_QCM_Productionline_Defects_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Detail.Designer.cs">
+      <DependentUpon>F_QCM_Productionline_Defects_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Edit.Designer.cs">
+      <DependentUpon>F_QCM_Productionline_Defects_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Productionline_Defects_Main.Designer.cs">
+      <DependentUpon>F_QCM_Productionline_Defects_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_QualityExceptionHandling_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_QualityExceptionHandling_Detail.Designer.cs">
+      <DependentUpon>F_QCM_QualityExceptionHandling_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_QualityExceptionHandling_Inform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_QualityExceptionHandling_Inform.Designer.cs">
+      <DependentUpon>F_QCM_QualityExceptionHandling_Inform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_QualityExceptionHandling_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_QualityExceptionHandling_Main.Designer.cs">
+      <DependentUpon>F_QCM_QualityExceptionHandling_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ravwmaterialinspection_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ravwmaterialinspection_Main.Designer.cs">
+      <DependentUpon>F_QCM_Ravwmaterialinspection_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Reinspectionreport_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Reinspectionreport_Add.Designer.cs">
+      <DependentUpon>F_QCM_Reinspectionreport_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_AbnormalReport_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_AbnormalReport_Main.Designer.cs">
+      <DependentUpon>F_QCM_AbnormalReport_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Reinspectionreport_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Reinspectionreport_Main.Designer.cs">
+      <DependentUpon>F_QCM_Reinspectionreport_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_RQCPatrol_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_RQCPatrol_Edit.Designer.cs">
+      <DependentUpon>F_QCM_RQCPatrol_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_RQCPatrol_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_RQCPatrol_List.Designer.cs">
+      <DependentUpon>F_QCM_RQCPatrol_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_RQCPatrol_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_RQCPatrol_Main.Designer.cs">
+      <DependentUpon>F_QCM_RQCPatrol_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_SatraLeatherEvaluationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_SatraLeatherEvaluationReport.Designer.cs">
+      <DependentUpon>F_QCM_SatraLeatherEvaluationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_SatraLeatherEvaluationTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_SatraLeatherEvaluationTable.Designer.cs">
+      <DependentUpon>F_QCM_SatraLeatherEvaluationTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Spotchecktaskinventory_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Spotchecktaskinventory_Main.Designer.cs">
+      <DependentUpon>F_QCM_Spotchecktaskinventory_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_SystemFileMaintenance_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_SystemFileMaintenance_Add.Designer.cs">
+      <DependentUpon>F_QCM_SystemFileMaintenance_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_SystemFileMaintenance_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_SystemFileMaintenance_Main.Designer.cs">
+      <DependentUpon>F_QCM_SystemFileMaintenance_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_TaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_TaskList.Designer.cs">
+      <DependentUpon>F_QCM_TaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_TQC_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_TQC_Main.Designer.cs">
+      <DependentUpon>F_QCM_TQC_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_board.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_board.Designer.cs">
+      <DependentUpon>F_QCM_VampQualityAudit_board.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_List.Designer.cs">
+      <DependentUpon>F_QCM_VampQualityAudit_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_List_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_List_D.Designer.cs">
+      <DependentUpon>F_QCM_VampQualityAudit_List_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_VampQualityAudit_Main.Designer.cs">
+      <DependentUpon>F_QCM_VampQualityAudit_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_VampQuality_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_VampQuality_query.Designer.cs">
+      <DependentUpon>F_QCM_VampQuality_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Vampschedule_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Vampschedule_Add.Designer.cs">
+      <DependentUpon>F_QCM_Vampschedule_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Vampschedule_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Vampschedule_Main.Designer.cs">
+      <DependentUpon>F_QCM_Vampschedule_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QCM_CUSTOMER_COMPLAINT_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QCM_CUSTOMER_COMPLAINT_Main.Designer.cs">
+      <DependentUpon>QCM_CUSTOMER_COMPLAINT_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RDLC\F_A01_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDLC\F_A01_Report.Designer.cs">
+      <DependentUpon>F_A01_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UControl\UcChemicalsCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\UcChemicalsCode.Designer.cs">
+      <DependentUpon>UcChemicalsCode.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SJeMES_Control_Library\SJeMES_Control_Library.csproj">
+      <Project>{6f45dc55-17d1-4409-ac39-f73d789b078d}</Project>
+      <Name>SJeMES_Control_Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_Framework\SJeMES_Framework.csproj">
+      <Project>{6a483c7a-92e1-4a65-a5fd-ecb5f4930373}</Project>
+      <Name>SJeMES_Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_QCM_Inspection\SJeMES_QCM_Inspection.csproj">
+      <Project>{0b0b0121-cbe8-4f29-993a-260101546e7d}</Project>
+      <Name>SJeMES_QCM_Inspection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="APP_Compliance_Print_Edit.resx">
+      <DependentUpon>APP_Compliance_Print_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileCheck.resx">
+      <DependentUpon>FileCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileCheckStatus.resx">
+      <DependentUpon>FileCheckStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAQLBAInsert.resx">
+      <DependentUpon>frmAQLBAInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_AQLBAEnteringxw_Add.resx">
+      <DependentUpon>F_QCM_AQLBAEnteringxw_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_AQLBAEntering_Main.resx">
+      <DependentUpon>F_QCM_AQLBAEntering_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ART_File_Detail.resx">
+      <DependentUpon>F_QCM_ART_File_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ATR_File1.resx">
+      <DependentUpon>F_QCM_ATR_File1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ATR_File1_Edit.resx">
+      <DependentUpon>F_QCM_ATR_File1_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ATR_File2.resx">
+      <DependentUpon>F_QCM_ATR_File2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ATR_File2_Edit.resx">
+      <DependentUpon>F_QCM_ATR_File2_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ATR_File3.resx">
+      <DependentUpon>F_QCM_ATR_File3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ATR_File3_Edit.resx">
+      <DependentUpon>F_QCM_ATR_File3_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BadReturnAdd.resx">
+      <DependentUpon>F_QCM_BadReturnAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BadReturnMain.resx">
+      <DependentUpon>F_QCM_BadReturnMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BadReTurn_Detail.resx">
+      <DependentUpon>F_QCM_BadReTurn_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BATCH_PRODUCTION.resx">
+      <DependentUpon>F_QCM_BATCH_PRODUCTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BATCH_PRODUCTION_Detail.resx">
+      <DependentUpon>F_QCM_BATCH_PRODUCTION_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BATCH_PRODUCTION_Edit.resx">
+      <DependentUpon>F_QCM_BATCH_PRODUCTION_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BdmoutqualitylistmSelect.resx">
+      <DependentUpon>F_QCM_BdmoutqualitylistmSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_BdmoutqualitylistmSelect_List.resx">
+      <DependentUpon>F_QCM_BdmoutqualitylistmSelect_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Bdmoutqualitylistm_Main.resx">
+      <DependentUpon>F_QCM_Bdmoutqualitylistm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Broken_Needle_Edit.resx">
+      <DependentUpon>F_QCM_Broken_Needle_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Broken_Needle_List.resx">
+      <DependentUpon>F_QCM_Broken_Needle_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Broken_Needle_Main.resx">
+      <DependentUpon>F_QCM_Broken_Needle_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ChecktoolMaintenance_List.resx">
+      <DependentUpon>F_QCM_ChecktoolMaintenance_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ChecktoolMaintenance_Main.resx">
+      <DependentUpon>F_QCM_ChecktoolMaintenance_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ChemicalPrint.resx">
+      <DependentUpon>F_QCM_ChemicalPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_CHEMICAL_CONTAINER_Main .resx">
+      <DependentUpon>F_QCM_CHEMICAL_CONTAINER_Main .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Chemical_information_create.resx">
+      <DependentUpon>F_QCM_Chemical_information_create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Chemical_information_create_Edit.resx">
+      <DependentUpon>F_QCM_Chemical_information_create_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ComplianceManagement_Main.resx">
+      <DependentUpon>F_QCM_ComplianceManagement_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ConfirmShoes_Add.resx">
+      <DependentUpon>F_QCM_ConfirmShoes_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ConfirmShoes_Main.resx">
+      <DependentUpon>F_QCM_ConfirmShoes_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_CUSTOMER_COMPLAINT_Add.resx">
+      <DependentUpon>F_QCM_CUSTOMER_COMPLAINT_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_CUSTOMER_COMPLAINT_Detail.resx">
+      <DependentUpon>F_QCM_CUSTOMER_COMPLAINT_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_CUSTOMER_COMPLAINT_Main.resx">
+      <DependentUpon>F_QCM_CUSTOMER_COMPLAINT_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_CWAState_Main.resx">
+      <DependentUpon>F_QCM_CWAState_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ExternalColorCard_Add.resx">
+      <DependentUpon>F_QCM_ExternalColorCard_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ExternalColorCard_Edit.resx">
+      <DependentUpon>F_QCM_ExternalColorCard_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ExternalColorCard_Main.resx">
+      <DependentUpon>F_QCM_ExternalColorCard_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Filesupload.resx">
+      <DependentUpon>F_QCM_Filesupload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Filesupload2.resx">
+      <DependentUpon>F_QCM_Filesupload2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_FilesuploadEdit.resx">
+      <DependentUpon>F_QCM_FilesuploadEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_FilesuploadEdit2.resx">
+      <DependentUpon>F_QCM_FilesuploadEdit2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_FilesuploadSelectArt.resx">
+      <DependentUpon>F_QCM_FilesuploadSelectArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_FilesuploadView.resx">
+      <DependentUpon>F_QCM_FilesuploadView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Firstarticle_confirm_Add.resx">
+      <DependentUpon>F_QCM_Firstarticle_confirm_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Firstarticle_confirm_Main.resx">
+      <DependentUpon>F_QCM_Firstarticle_confirm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Inspection_Supervision_report.resx">
+      <DependentUpon>F_QCM_Inspection_Supervision_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Inspection_Supervision_report_Add.resx">
+      <DependentUpon>F_QCM_Inspection_Supervision_report_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Inspection_Supervision_report_Detail.resx">
+      <DependentUpon>F_QCM_Inspection_Supervision_report_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_InwarehouseAnomalyStat.resx">
+      <DependentUpon>F_QCM_InwarehouseAnomalyStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_LaboratorySampleStorage_Add.resx">
+      <DependentUpon>F_QCM_LaboratorySampleStorage_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_LaboratorySampleStorage_Main.resx">
+      <DependentUpon>F_QCM_LaboratorySampleStorage_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Measuringthenailcorrection_Main.resx">
+      <DependentUpon>F_QCM_Measuringthenailcorrection_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Metalinspection_Main.resx">
+      <DependentUpon>F_QCM_Metalinspection_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_PaintedSkinRecords.resx">
+      <DependentUpon>F_QCM_PaintedSkinRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_PaintedSkinRecords_Detail.resx">
+      <DependentUpon>F_QCM_PaintedSkinRecords_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_PaintedSkinRecords_Detail2.resx">
+      <DependentUpon>F_QCM_PaintedSkinRecords_Detail2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_ProductDelivery.resx">
+      <DependentUpon>F_QCM_ProductDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Productionline_Defects_Add.resx">
+      <DependentUpon>F_QCM_Productionline_Defects_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Productionline_Defects_Detail.resx">
+      <DependentUpon>F_QCM_Productionline_Defects_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Productionline_Defects_Edit.resx">
+      <DependentUpon>F_QCM_Productionline_Defects_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Productionline_Defects_Main.resx">
+      <DependentUpon>F_QCM_Productionline_Defects_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_QualityExceptionHandling_Detail.resx">
+      <DependentUpon>F_QCM_QualityExceptionHandling_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_QualityExceptionHandling_Inform.resx">
+      <DependentUpon>F_QCM_QualityExceptionHandling_Inform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_QualityExceptionHandling_Main.resx">
+      <DependentUpon>F_QCM_QualityExceptionHandling_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ravwmaterialinspection_Main.resx">
+      <DependentUpon>F_QCM_Ravwmaterialinspection_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Reinspectionreport_Add.resx">
+      <DependentUpon>F_QCM_Reinspectionreport_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_AbnormalReport_Main.resx">
+      <DependentUpon>F_QCM_AbnormalReport_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Reinspectionreport_Main.resx">
+      <DependentUpon>F_QCM_Reinspectionreport_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_RQCPatrol_Edit.resx">
+      <DependentUpon>F_QCM_RQCPatrol_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_RQCPatrol_List.resx">
+      <DependentUpon>F_QCM_RQCPatrol_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_RQCPatrol_Main.resx">
+      <DependentUpon>F_QCM_RQCPatrol_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_SatraLeatherEvaluationReport.resx">
+      <DependentUpon>F_QCM_SatraLeatherEvaluationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_SatraLeatherEvaluationTable.resx">
+      <DependentUpon>F_QCM_SatraLeatherEvaluationTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Spotchecktaskinventory_Main.resx">
+      <DependentUpon>F_QCM_Spotchecktaskinventory_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_SystemFileMaintenance_Add.resx">
+      <DependentUpon>F_QCM_SystemFileMaintenance_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_SystemFileMaintenance_Main.resx">
+      <DependentUpon>F_QCM_SystemFileMaintenance_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_TaskList.resx">
+      <DependentUpon>F_QCM_TaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_TQC_Main.resx">
+      <DependentUpon>F_QCM_TQC_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_VampQualityAudit_board.resx">
+      <DependentUpon>F_QCM_VampQualityAudit_board.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_VampQualityAudit_List.resx">
+      <DependentUpon>F_QCM_VampQualityAudit_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_VampQualityAudit_List_D.resx">
+      <DependentUpon>F_QCM_VampQualityAudit_List_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_VampQualityAudit_Main.resx">
+      <DependentUpon>F_QCM_VampQualityAudit_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_VampQuality_query.resx">
+      <DependentUpon>F_QCM_VampQuality_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Vampschedule_Add.resx">
+      <DependentUpon>F_QCM_Vampschedule_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Vampschedule_Main.resx">
+      <DependentUpon>F_QCM_Vampschedule_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QCM_CUSTOMER_COMPLAINT_Main.resx">
+      <DependentUpon>QCM_CUSTOMER_COMPLAINT_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDLC\A-01.rdlc" />
+    <EmbeddedResource Include="RDLC\F_A01_Report.resx">
+      <DependentUpon>F_A01_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\UcChemicalsCode.resx">
+      <DependentUpon>UcChemicalsCode.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\2021111900001.jpg" />
+    <Content Include="Resources\ic_select_file.png" />
+    <Content Include="Resources\ic_select_img.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ic_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_print_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_update_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_upload_file_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_upload_img_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DS\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

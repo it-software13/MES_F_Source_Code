@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="datatableHead" msprop:Generator_TableClassName="datatableHeadDataTable" msprop:Generator_TableVarName="tabledatatableHead" msprop:Generator_TablePropName="datatableHead" msprop:Generator_RowDeletingName="datatableHeadRowDeleting" msprop:Generator_RowChangingName="datatableHeadRowChanging" msprop:Generator_RowEvHandlerName="datatableHeadRowChangeEventHandler" msprop:Generator_RowDeletedName="datatableHeadRowDeleted" msprop:Generator_UserTableName="datatableHead" msprop:Generator_RowChangedName="datatableHeadRowChanged" msprop:Generator_RowEvArgName="datatableHeadRowChangeEvent" msprop:Generator_RowClassName="datatableHeadRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INSPECTION_DATE" msprop:Generator_ColumnVarNameInTable="columnINSPECTION_DATE" msprop:Generator_ColumnPropNameInRow="INSPECTION_DATE" msprop:Generator_ColumnPropNameInTable="INSPECTION_DATEColumn" msprop:Generator_UserColumnName="INSPECTION_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="ART_CODE" msprop:Generator_ColumnVarNameInTable="columnART_CODE" msprop:Generator_ColumnPropNameInRow="ART_CODE" msprop:Generator_ColumnPropNameInTable="ART_CODEColumn" msprop:Generator_UserColumnName="ART_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CATEGORY_NAME" msprop:Generator_ColumnVarNameInTable="columnCATEGORY_NAME" msprop:Generator_ColumnPropNameInRow="CATEGORY_NAME" msprop:Generator_ColumnPropNameInTable="CATEGORY_NAMEColumn" msprop:Generator_UserColumnName="CATEGORY_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="GENERAL_TESTTYPE_NO" msprop:Generator_ColumnVarNameInTable="columnGENERAL_TESTTYPE_NO" msprop:Generator_ColumnPropNameInRow="GENERAL_TESTTYPE_NO" msprop:Generator_ColumnPropNameInTable="GENERAL_TESTTYPE_NOColumn" msprop:Generator_UserColumnName="GENERAL_TESTTYPE_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="INSPECTION_ENDDATE" msprop:Generator_ColumnVarNameInTable="columnINSPECTION_ENDDATE" msprop:Generator_ColumnPropNameInRow="INSPECTION_ENDDATE" msprop:Generator_ColumnPropNameInTable="INSPECTION_ENDDATEColumn" msprop:Generator_UserColumnName="INSPECTION_ENDDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTMENT_NO" msprop:Generator_ColumnVarNameInTable="columnDEPARTMENT_NO" msprop:Generator_ColumnPropNameInRow="DEPARTMENT_NO" msprop:Generator_ColumnPropNameInTable="DEPARTMENT_NOColumn" msprop:Generator_UserColumnName="DEPARTMENT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PLANTAREA_NAME" msprop:Generator_ColumnVarNameInTable="columnPLANTAREA_NAME" msprop:Generator_ColumnPropNameInRow="PLANTAREA_NAME" msprop:Generator_ColumnPropNameInTable="PLANTAREA_NAMEColumn" msprop:Generator_UserColumnName="PLANTAREA_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableBody" msprop:Generator_TableClassName="DataTableBodyDataTable" msprop:Generator_TableVarName="tableDataTableBody" msprop:Generator_TablePropName="DataTableBody" msprop:Generator_RowDeletingName="DataTableBodyRowDeleting" msprop:Generator_RowChangingName="DataTableBodyRowChanging" msprop:Generator_RowEvHandlerName="DataTableBodyRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableBodyRowDeleted" msprop:Generator_UserTableName="DataTableBody" msprop:Generator_RowChangedName="DataTableBodyRowChanged" msprop:Generator_RowEvArgName="DataTableBodyRowChangeEvent" msprop:Generator_RowClassName="DataTableBodyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TESTITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnTESTITEM_CODE" msprop:Generator_ColumnPropNameInRow="TESTITEM_CODE" msprop:Generator_ColumnPropNameInTable="TESTITEM_CODEColumn" msprop:Generator_UserColumnName="TESTITEM_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnTESTITEM_NAME" msprop:Generator_ColumnPropNameInRow="TESTITEM_NAME" msprop:Generator_ColumnPropNameInTable="TESTITEM_NAMEColumn" msprop:Generator_UserColumnName="TESTITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REFERENCE_LEVEL" msprop:Generator_ColumnVarNameInTable="columnREFERENCE_LEVEL" msprop:Generator_ColumnPropNameInRow="REFERENCE_LEVEL" msprop:Generator_ColumnPropNameInTable="REFERENCE_LEVELColumn" msprop:Generator_UserColumnName="REFERENCE_LEVEL" type="xs:string" minOccurs="0" />
+              <xs:element name="RESULT_VALUE" msprop:Generator_ColumnVarNameInTable="columnRESULT_VALUE" msprop:Generator_ColumnPropNameInRow="RESULT_VALUE" msprop:Generator_ColumnPropNameInTable="RESULT_VALUEColumn" msprop:Generator_UserColumnName="RESULT_VALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="T_CHECK_ITEM" msprop:Generator_ColumnVarNameInTable="columnT_CHECK_ITEM" msprop:Generator_ColumnPropNameInRow="T_CHECK_ITEM" msprop:Generator_ColumnPropNameInTable="T_CHECK_ITEMColumn" msprop:Generator_UserColumnName="T_CHECK_ITEM" type="xs:string" minOccurs="0" />
+              <xs:element name="T_CHECK_VALUE" msprop:Generator_ColumnVarNameInTable="columnT_CHECK_VALUE" msprop:Generator_ColumnPropNameInRow="T_CHECK_VALUE" msprop:Generator_ColumnPropNameInTable="T_CHECK_VALUEColumn" msprop:Generator_UserColumnName="T_CHECK_VALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="D_CHECK_ITEM" msprop:Generator_ColumnVarNameInTable="columnD_CHECK_ITEM" msprop:Generator_ColumnPropNameInRow="D_CHECK_ITEM" msprop:Generator_ColumnPropNameInTable="D_CHECK_ITEMColumn" msprop:Generator_UserColumnName="D_CHECK_ITEM" type="xs:string" minOccurs="0" />
+              <xs:element name="D_CHECK_VALUE" msprop:Generator_ColumnVarNameInTable="columnD_CHECK_VALUE" msprop:Generator_ColumnPropNameInRow="D_CHECK_VALUE" msprop:Generator_ColumnPropNameInTable="D_CHECK_VALUEColumn" msprop:Generator_UserColumnName="D_CHECK_VALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" msprop:Generator_UserColumnName="UNIT" type="xs:string" minOccurs="0" />
+              <xs:element name="SAMPLE_NUM" msprop:Generator_ColumnVarNameInTable="columnSAMPLE_NUM" msprop:Generator_ColumnPropNameInRow="SAMPLE_NUM" msprop:Generator_ColumnPropNameInTable="SAMPLE_NUMColumn" msprop:Generator_UserColumnName="SAMPLE_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="CHECK_RESULT" msprop:Generator_ColumnVarNameInTable="columnCHECK_RESULT" msprop:Generator_ColumnPropNameInRow="CHECK_RESULT" msprop:Generator_ColumnPropNameInTable="CHECK_RESULTColumn" msprop:Generator_UserColumnName="CHECK_RESULT" type="xs:string" minOccurs="0" />
+              <xs:element name="TEST_REMARKS" msprop:Generator_ColumnVarNameInTable="columnTEST_REMARKS" msprop:Generator_ColumnPropNameInRow="TEST_REMARKS" msprop:Generator_ColumnPropNameInTable="TEST_REMARKSColumn" msprop:Generator_UserColumnName="TEST_REMARKS" type="xs:string" minOccurs="0" />
+              <xs:element name="FORMULA_CONTENT" msprop:Generator_ColumnVarNameInTable="columnFORMULA_CONTENT" msprop:Generator_ColumnPropNameInRow="FORMULA_CONTENT" msprop:Generator_ColumnPropNameInTable="FORMULA_CONTENTColumn" msprop:Generator_UserColumnName="FORMULA_CONTENT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

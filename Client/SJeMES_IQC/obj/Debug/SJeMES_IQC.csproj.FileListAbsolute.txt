@@ -1,0 +1,179 @@
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_IQC.pdb
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\FastReport.Bars.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\FastReport.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\FastReport.Editor.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\FastReport.Install.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\FastReport.VSDesign.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\FastReport.Web.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\GDSJ_Framework.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\MaterialSkin.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\Newtonsoft.Json.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_Control_Library.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_Framework.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_QCM.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SjeMES_QCM_Ex.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_Report.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_Shared_Form.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\MySql.Data.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_QCM.pdb
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SjeMES_QCM_Ex.pdb
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_Report.pdb
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_Shared_Form.pdb
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.ColorNotice_Upload.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.ColorNotice_Upload_View.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Leather.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Main.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_NoLeather.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_BarcodePrint.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Location.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Location_Add.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_Add.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_jcgh.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_State.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Warehouse.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Warehouse_Add.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose_Art_Detail.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose_Inspection.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Edit.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Main.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Return_List.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Edit.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Edit2.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Main.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Main2.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Previousinspectionresults_view.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Vendor_Report_A_01Upload.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Vendor_Report_Main.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Viewinspectionresults_view.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VLaboratorytestresults_Vews.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Read.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VMaterialresults_Add.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VMaterialresults_OutWt.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouseDmp_Print.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_Main.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_MJ.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_MJQC.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_Print.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.Properties.Resources.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.View_Color_Notice.resources
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.GenerateResource.cache
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.CoreCompileInputs.cache
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.CopyComplete
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.pdb
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_IQC.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.dll
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csprojAssemblyReference.cache
+D:\Premika data\TFS\AEQS\Client\SJeMES_IQC\bin\Debug\Newtonsoft.Json.xml
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_IQC.dll
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_IQC.pdb
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\bin\Debug\GDSJ_Framework.dll
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\bin\Debug\Newtonsoft.Json.dll
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\bin\Debug\SJeMES_Framework.dll
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\bin\Debug\MySql.Data.dll
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csprojAssemblyReference.cache
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.ColorNotice_Upload.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.ColorNotice_Upload_View.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Leather.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Main.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_NoLeather.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_BarcodePrint.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Location.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Location_Add.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_Add.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_jcgh.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_State.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Warehouse.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Warehouse_Add.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose_Art_Detail.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose_Inspection.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Edit.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Main.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Return_List.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Edit.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Edit2.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Main.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Main2.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Previousinspectionresults_view.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Vendor_Report_A_01Upload.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Vendor_Report_Main.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Viewinspectionresults_view.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VLaboratorytestresults_Vews.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Read.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VMaterialresults_Add.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VMaterialresults_OutWt.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouseDmp_Print.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_Main.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_MJ.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_MJQC.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_Print.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.Properties.Resources.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.View_Color_Notice.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.GenerateResource.cache
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.CoreCompileInputs.cache
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.CopyComplete
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.dll
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.pdb
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Material_FinalReport.resources
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_QCM_Ex_Item_Set_UC.UC_F_QCM_Ex_Item_Set_New_CL.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\bin\Debug\SJeMES_IQC.dll
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\bin\Debug\SJeMES_IQC.pdb
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.ColorNotice_Upload.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.ColorNotice_Upload_View.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Leather.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Main.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_NoLeather.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_BarcodePrint.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Location.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Location_Add.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_Add.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_jcgh.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Store_State.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Warehouse.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_ConfirmShoes_Warehouse_Add.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose_Art_Detail.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Dispose_Inspection.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Edit.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Complaint_Main.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Customer_Return_List.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Edit.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Edit2.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Main.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Marketfeedback_Main2.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Material_FinalReport.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Previousinspectionresults_view.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Vendor_Report_A_01Upload.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Vendor_Report_Main.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Viewinspectionresults_view.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VLaboratorytestresults_Vews.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_Bad_Report_Read.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VMaterialresults_Add.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VMaterialresults_OutWt.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouseDmp_Print.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_Main.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_MJ.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_MJQC.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_IQC_VWarehouse_Print.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.F_QCM_Ex_Item_Set_UC.UC_F_QCM_Ex_Item_Set_New_CL.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.Properties.Resources.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.View_Color_Notice.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.GenerateResource.cache
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.CoreCompileInputs.cache
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.csproj.CopyComplete
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.dll
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.pdb
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.Article_Search_Warehouse_Main.resources
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\obj\Debug\SJeMES_IQC.csprojAssemblyReference.cache
+C:\Users\it-software03\Desktop\IQC\FrontEnd\SJeMES_IQC\bin\Debug\Newtonsoft.Json.xml
+D:\TFS_Source_Code\AEQS\Client\SJeMES_IQC\obj\Debug\SJeMES_IQC.Article_Search_Warehouse_Main.resources

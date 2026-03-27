@@ -1,0 +1,1 @@
+Printer\BarCodeModel\bartend.exe /F=LabComponent.btw /P /X

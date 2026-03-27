@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="05/02/2024 09:09:48" ReportInfo.Modified="05/03/2024 12:43:37" ReportInfo.CreatorVersion="2023.3.0.0">
+  <Dictionary>
+    <OracleDataConnection Name="Connection" ConnectionString="rijcmlqBNvKtstHOKSbFZ3HFWYHI1YhzG3y9yVcPb/kKhFSDpAIyivgMyvlY6KW7R+gvzUECtyGTvfNC/1O4AeRJ9MdgA==">
+      <TableDataSource Name="Table" DataType="System.Int32" Enabled="true" SelectCommand="select a.*, b.EXAMINATION_STANDARD,b.EVALUATION_STANDARD,to_char(sysdate,'yyyy/MM/dd') as now,c.training_s_date,c.training_e_date&#13;&#10;  from t_tsm_skill_score_evaluation a&#13;&#10;  left join t_tsm_skill_standard b   on a.process = b.skillname&#13;&#10;  left join t_tsm_emp_registration c on a.barcode=c.emp_no and a.process=c.process_name">
+        <Column Name="ID" DataType="System.Decimal"/>
+        <Column Name="BARCODE" DataType="System.String"/>
+        <Column Name="NAME" DataType="System.String"/>
+        <Column Name="DEPT" DataType="System.String"/>
+        <Column Name="PROCESS" DataType="System.String"/>
+        <Column Name="TRAINER" DataType="System.String"/>
+        <Column Name="MODEL" DataType="System.String"/>
+        <Column Name="IE_ST_TIME" DataType="System.String"/>
+        <Column Name="SECONDCYCLE" DataType="System.String"/>
+        <Column Name="THIRDCYCLE" DataType="System.String"/>
+        <Column Name="FOURTHCYCLE" DataType="System.String"/>
+        <Column Name="FIFTHCYCLE" DataType="System.String"/>
+        <Column Name="TCT" DataType="System.String"/>
+        <Column Name="AVGCYCLETIME" DataType="System.String"/>
+        <Column Name="IESCORE" DataType="System.String"/>
+        <Column Name="QIPSCORE" DataType="System.String"/>
+        <Column Name="PRODUCTIONSCORE" DataType="System.String"/>
+        <Column Name="TOTALSCORE" DataType="System.String"/>
+        <Column Name="SKILLLEVEL" DataType="System.String"/>
+        <Column Name="TRAINER_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="OPERATOR_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="IE_SPECIALIST_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="QIP_INCHARGE_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="LINE_SUPERVISOR_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="PLANT_INCHARGE_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="ASSEMBLY_TRAINING_SUPERVISOR_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="SENIOR_SUPERVISOR_OF_TRAINING_DEPT_SIG" DataType="System.Byte[]" BindableControl="Picture"/>
+        <Column Name="CREATEDBY" DataType="System.String"/>
+        <Column Name="CREATEDDATE" DataType="System.String"/>
+        <Column Name="CREATEDTIME" DataType="System.String"/>
+        <Column Name="MODIFIEDBY" DataType="System.String"/>
+        <Column Name="MODIFIEDDATE" DataType="System.String"/>
+        <Column Name="MODIFIEDTIME" DataType="System.String"/>
+        <Column Name="EXAMINATION_STANDARD" DataType="System.String"/>
+        <Column Name="EVALUATION_STANDARD" DataType="System.String"/>
+        <Column Name="NOW" DataType="System.String"/>
+        <Column Name="TRAINING_S_DATE" DataType="System.String"/>
+        <Column Name="TRAINING_E_DATE" DataType="System.String"/>
+        <Column Name="FIRSTCYCLE" DataType="System.String"/>
+        <Column Name="TRAININGCENTRESCORE" DataType="System.String"/>
+      </TableDataSource>
+    </OracleDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="297" PaperHeight="210" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1047.06" Height="9.45"/>
+    <PageHeaderBand Name="PageHeader1" Top="13.45" Width="1047.06" Height="9.45">
+      <LineObject Name="Line1" Top="9.45" Width="1048.95"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="26.9" Width="1047.06" Height="699.3" Border.Lines="All" DataSource="Table">
+      <LineObject Name="Line2" Top="37.8" Width="1048.95"/>
+      <TextObject Name="Text1" Left="274.05" Top="9.45" Width="491.4" Height="28.35" Text="APACHE FOOTWEAR LTD" HorzAlign="Center" VertAlign="Center" Font="Arial, 22pt, style=Bold"/>
+      <LineObject Name="Line4" Top="103.95" Width="1048.95"/>
+      <TextObject Name="Text2" Left="415.8" Top="75.6" Width="160.65" Height="18.9" Text="Model for testing:" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="359.1" Top="47.25" Width="359.1" Height="18.9" Text="Practical Examination Table" VertAlign="Center" Font="Arial, 16pt"/>
+      <LineObject Name="Line5" Left="415.8" Top="66.15" Height="529.2"/>
+      <LineObject Name="Line6" Top="179.55" Width="1048.95"/>
+      <LineObject Name="Line7" Left="415.8" Top="141.75" Width="633.15"/>
+      <LineObject Name="Line8" Top="226.8" Width="1048.95"/>
+      <LineObject Name="Line9" Top="321.3" Width="1048.95"/>
+      <LineObject Name="Line10" Left="604.8" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line11" Left="680.4" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line12" Left="756" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line13" Left="831.6" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line14" Left="907.2" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line15" Left="982.8" Top="264.6" Height="189"/>
+      <LineObject Name="Line16" Left="604.8" Top="264.6" Width="444.15"/>
+      <TextObject Name="Text6" Left="954.45" Top="236.25" Width="47.25" Height="18.9" Text="Total" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text7" Left="831.6" Top="236.25" Width="66.15" Height="28.35" Text="Training Centre" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text8" Left="614.25" Top="226.8" Width="56.7" Height="37.8" Text="QIP Dept" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text9" Left="689.85" Top="226.8" Width="56.7" Height="37.8" Text="Production" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text10" Left="756" Top="226.8" Width="56.7" Height="37.8" Text="IE Dept" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text11" Left="604.8" Top="255.15" Width="75.6" Height="75.6" Text="BA Cross checking 20" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text12" Left="680.4" Top="245.7" Width="75.6" Height="75.6" Text="Production Score 30" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text13" Left="756" Top="255.15" Width="75.6" Height="75.6" Text="IE Efficiency 20" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text14" Left="831.6" Top="255.15" Width="75.6" Height="75.6" Text="Skill Ability 30" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text15" Left="907.2" Top="245.7" Width="75.6" Height="75.6" Text="Standard Score" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text16" Left="982.8" Top="245.7" Width="75.6" Height="75.6" Text="Actual Score" VertAlign="Center" Font="Arial, 10pt"/>
+      <LineObject Name="Line17" Top="453.6" Width="1048.95"/>
+      <LineObject Name="Line18" Top="519.75" Width="1048.95"/>
+      <LineObject Name="Line19" Top="557.55" Width="1048.95"/>
+      <LineObject Name="Line20" Top="595.35" Width="1048.95"/>
+      <LineObject Name="Line21" Top="614.25" Width="1048.95"/>
+      <LineObject Name="Line22" Left="37.8" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line23" Left="132.3" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line24" Left="226.8" Top="226.8" Height="226.8"/>
+      <LineObject Name="Line25" Left="321.3" Top="226.8" Height="226.8"/>
+      <TextObject Name="Text17" Top="245.7" Width="37.8" Height="75.6" Text="S No" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text18" Left="47.25" Top="255.15" Width="75.6" Height="66.15" Text="Dept" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text19" Left="151.2" Top="236.25" Width="75.6" Height="94.5" Text="Name" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text20" Left="236.25" Top="236.25" Width="75.6" Height="94.5" Text="Barcode" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text21" Left="330.75" Top="236.25" Width="75.6" Height="94.5" Text="Items" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text22" Left="425.25" Top="236.25" Width="160.65" Height="94.5" Text="Examination Standards" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text23" Left="9.45" Top="444.15" Width="141.75" Height="37.8" Text="Trainer:" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text24" Top="481.95" Width="141.75" Height="37.8" Text="Operator Signature :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text25" Left="9.45" Top="519.75" Width="141.75" Height="37.8" Text="QIP Plant In-Charge :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text26" Left="425.25" Top="444.15" Width="141.75" Height="37.8" Text="IE Specialist:" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text27" Left="425.25" Top="481.95" Width="179.55" Height="37.8" Text="Plant In-charge Signature :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text28" Left="425.25" Top="519.75" Width="217.35" Height="37.8" Text="Senior Supervisor of training Dept" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text29" Left="9.45" Top="585.9" Width="557.55" Height="37.8" Text="Grade : If Score &gt;= 80 Excellent; &gt;=70 good; &gt;=60 Pass; &lt;=59 Bad" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text30" Left="9.45" Top="623.7" Width="982.8" Height="56.7" Text="[Table.EVALUATION_STANDARD]" VertAlign="Center" Font="Arial, 10pt"/>
+      <LineObject Name="Line26" Top="66.15" Width="1048.95"/>
+      <TextObject Name="Text31" Left="415.8" Top="113.4" Width="160.65" Height="18.9" Text="IE Standard :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text32" Left="415.8" Top="141.75" Width="160.65" Height="18.9" Text="Actual Operation Time :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text33" Left="415.8" Top="189" Width="56.7" Height="18.9" Text="Date :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text34" Top="198.45" Width="103.95" Height="18.9" Text="Training Date :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text35" Top="340.2" Width="37.8" Height="56.7" Text="1" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text36" Left="226.8" Top="368.55" Width="85.05" Height="18.9" Text="[Table.BARCODE]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text37" Left="132.3" Top="368.55" Width="94.5" Height="18.9" Text="[Table.NAME]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text38" Left="37.8" Top="368.55" Width="94.5" Height="18.9" Text="[Table.DEPT]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text40" Left="321.3" Top="368.55" Width="94.5" Height="18.9" Text="[Table.PROCESS]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text43" Left="604.8" Top="368.55" Width="66.15" Height="18.9" Text="[Table.QIPSCORE]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text45" Left="680.4" Top="368.55" Width="66.15" Height="18.9" Text="[Table.PRODUCTIONSCORE]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text46" Left="604.8" Top="113.4" Width="94.5" Height="18.9" Text="[Table.IE_ST_TIME]" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text47" Left="604.8" Top="75.6" Width="94.5" Height="18.9" CanBreak="false" Text="[Table.MODEL]" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text48" Left="756" Top="368.55" Width="75.6" Height="18.9" Text="[Table.IESCORE]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text51" Left="982.8" Top="368.55" Width="94.5" Height="18.9" Text="[Table.TOTALSCORE]" VertAlign="Center" Font="Arial, 8pt" TextOutline.Enabled="true" TextOutline.Color="Transparent"/>
+      <TextObject Name="Text53" Left="916.65" Top="368.55" Width="47.25" Height="18.9" Text="100" VertAlign="Center" Font="Arial, 9pt"/>
+      <PictureObject Name="Picture1" Left="189" Top="453.6" Width="217.35" Height="18.9" DataColumn="Table.TRAINER_SIG"/>
+      <PictureObject Name="Picture2" Left="189" Top="491.4" Width="217.35" Height="18.9" DataColumn="Table.OPERATOR_SIG"/>
+      <PictureObject Name="Picture3" Left="189" Top="529.2" Width="226.8" Height="18.9" DataColumn="Table.QIP_INCHARGE_SIG"/>
+      <TextObject Name="Text54" Left="415.8" Top="330.75" Width="189" Height="113.4" Text="[Table.EXAMINATION_STANDARD]" VertAlign="Center" Font="Arial, 8pt"/>
+      <PictureObject Name="Picture4" Left="661.5" Top="463.05" Width="255.15" Height="18.9" DataColumn="Table.IE_SPECIALIST_SIG"/>
+      <PictureObject Name="Picture5" Left="661.5" Top="491.4" Width="255.15" Height="18.9" DataColumn="Table.PLANT_INCHARGE_SIG"/>
+      <PictureObject Name="Picture6" Left="661.5" Top="529.2" Width="255.15" Height="18.9" DataColumn="Table.SENIOR_SUPERVISOR_OF_TRAINING_DEPT_SIG"/>
+      <TextObject Name="Text55" Left="604.8" Top="151.2" Width="94.5" Height="18.9" Text="[Table.AVGCYCLETIME]" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text56" Left="113.4" Top="198.45" Width="94.5" Height="18.9" Text="[Table.TRAINING_S_DATE]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text57" Left="481.95" Top="189" Width="94.5" Height="18.9" Text="[Table.NOW]" VertAlign="Center" Font="Arial, 8pt"/>
+      <LineObject Name="Line27" Top="481.95" Width="1048.95"/>
+      <TextObject Name="Text58" Left="9.45" Top="557.55" Width="141.75" Height="37.8" Text="Line Supervisor :" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text59" Left="434.7" Top="557.55" Width="217.35" Height="37.8" Text="Assembly Training Supervisor :" VertAlign="Center" Font="Arial, 10pt"/>
+      <PictureObject Name="Picture7" Left="189" Top="567" Width="226.8" Height="18.9" DataColumn="Table.LINE_SUPERVISOR_SIG"/>
+      <PictureObject Name="Picture8" Left="661.5" Top="567" Width="245.7" Height="18.9" DataColumn="Table.ASSEMBLY_TRAINING_SUPERVISOR_SIG"/>
+      <TextObject Name="Text60" Left="841.05" Top="368.55" Width="56.7" Height="18.9" Text="[Table.TRAININGCENTRESCORE]" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="730.2" Width="1047.06"/>
+  </ReportPage>
+</Report>

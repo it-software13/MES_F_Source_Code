@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/27/2019 11:51:39" ReportInfo.Modified="02/16/2022 08:49:36" ReportInfo.CreatorVersion="2022.1.2.0">
+  <Dictionary>
+    <OdbcDataConnection Name="Connection" ConnectionString="rijcmlq6iAzCLvnX8BEz969dQJVNmZC2JUYdEA++acjYODEpsJBdAUb0UnFkf5DMnTnE+u4xAzBVDF4Hw+pCWNyrPqSvKmqBCohH2KUjHR0O7ZWKkTNZc4Wh6y6NoTg89aO978sZpBDOODIm7MZjLddhzl4N11jZeKKkGidkK60X5LJBdJk6iE9prAbQKeoPONpT61/j51sf2Gk8v4vtnrZmVfIbmFEJIMPyZX/VnyS2rA1eDg7RAX7f1vDT+uP39jyMm5FGXgAdNurHdLEG5OhFCRrfd70l3GJ4i90P6TvRL2lacmpPk0XY46wGKRJ41ewmPaJEgULbQkzCf6yFzDVoudVOV2T0DPtDs02zLn4MHiPM2Q=" LoginPrompt="true">
+      <TableDataSource Name="Table" DataType="System.Int32" Enabled="true" SelectCommand="SELECT DISTINCT m.CHK_NO AS 收料单号,&#13;&#10;                           '' as 收料单号和数量,&#13;&#10;                           '' as 收料数量,&#13;&#10;                           d.RCPT_QTY AS 收料数量2,&#13;&#10;                           to_char(SYSDATE, 'yyyy/MM/dd') AS 日期,&#13;&#10;                           b.SUPPLIERS_NAME AS 供应厂商名字,&#13;&#10;                           GF_ARTNO(m.source_no, i.order_seq) AS ArtNo,&#13;&#10;                           GF_Shoe_Name(GF_ARTNO(m.source_no, i.order_seq)) AS 鞋型,&#13;&#10;                           '' as ArtNo和鞋型,&#13;&#10;                           i.part_no AS 部位,&#13;&#10;                           e.name_t AS 材料名字,&#13;&#10;                           m.source_no AS 订单号,&#13;&#10;                           NVL(f.CHK_QTY, 0) AS 寄存数量,&#13;&#10;                           i.SALES_ORDER AS 销售订单号,&#13;&#10;                           '' AS 检验数量,&#13;&#10;                           NVL(f.CHK_QTY, 0) AS CHK_QTY,&#13;&#10;                           '' AS 抽检率,&#13;&#10;                           CASE&#13;&#10;                             WHEN (d.Rcpt_Qty &gt; 0) THEN&#13;&#10;                              round((NVL(f.CHK_QTY,0)/ d.Rcpt_Qty))&#13;&#10;                             ELSE&#13;&#10;                              0&#13;&#10;                           END AS 抽检率2,&#13;&#10;                           '' as 寄存日期,&#13;&#10;                           m.rcpt_date AS 寄存日期2,&#13;&#10;                           '' as 退货数量,&#13;&#10;                           NVL(i.RETURN_QTY, 0) AS 退货数量2,&#13;&#10;                           '' as 退货率,&#13;&#10;                           CASE&#13;&#10;                             WHEN (d.Rcpt_Qty &gt; 0) THEN&#13;&#10;                              round((NVL(i.RETURN_QTY, 0) / d.Rcpt_Qty),1)&#13;&#10;                             ELSE&#13;&#10;                              0&#13;&#10;                           END AS 退货率2,&#13;&#10;                           b.suppliers_code AS 供应厂商编号,&#13;&#10;                           i.item_no,&#13;&#10;                           m.stoc_no,&#13;&#10;                           d.item_no AS 材料号,&#13;&#10;                           m.org_id AS 工厂,&#13;&#10;                           '' AS Shoe_NameAndArt_No,&#13;&#10;                           '{unqualifiedCertificate}' AS 不合格证明&#13;&#10;                         FROM wms_rcpt_m m&#13;&#10;                        INNER JOIN wms_rcpt_d d&#13;&#10;                           ON m.chk_no = d.chk_no&#13;&#10;                        INNER JOIN bdm_purchase_order_item i&#13;&#10;                           ON d.source_no = i.order_no&#13;&#10;                          AND d.chk_seq = i.order_seq&#13;&#10;                        INNER JOIN base003m b&#13;&#10;                           ON b.SUPPLIERS_CODE = m.vend_no&#13;&#10;                        INNER JOIN bdm_rd_item e&#13;&#10;                           ON e.item_no = d.item_no&#13;&#10;                         LEFT JOIN iqc_chk_m f&#13;&#10;                           ON f.chk_no = d.chk_no&#13;&#10;                          AND f.chk_seq = d.chk_seq&#13;&#10;                          AND d.item_no = f.src_item_no&#13;&#10;                        WHERE 1 = 1 ">
+        <Column Name="收料单号" DataType="System.String"/>
+        <Column Name="收料数量" DataType="System.Decimal"/>
+        <Column Name="日期" DataType="System.String"/>
+        <Column Name="供应厂商名字" DataType="System.String"/>
+        <Column Name="鞋型" DataType="System.String"/>
+        <Column Name="部位" DataType="System.String"/>
+        <Column Name="材料名字" DataType="System.String"/>
+        <Column Name="订单号" DataType="System.String"/>
+        <Column Name="寄存数量" DataType="System.Decimal"/>
+        <Column Name="销售订单号" DataType="System.String"/>
+        <Column Name="检验数量" DataType="System.Decimal"/>
+        <Column Name="抽检率" DataType="System.Double"/>
+        <Column Name="寄存日期" DataType="System.DateTime"/>
+        <Column Name="退货数量" DataType="System.Decimal"/>
+        <Column Name="退货率" DataType="System.Double"/>
+        <Column Name="供应厂商编号" DataType="System.String"/>
+        <Column Name="ITEM_NO" Enabled="false" DataType="System.String"/>
+        <Column Name="STOC_NO" Enabled="false" DataType="System.String"/>
+        <Column Name="工厂" DataType="System.String"/>
+        <Column Name="SHOE_NAMEANDART_NO" Enabled="false" DataType="System.String"/>
+        <Column Name="不合格证明" DataType="System.String"/>
+        <Column Name="收料单号和数量" DataType="System.String"/>
+        <Column Name="收料数量2" DataType="System.Decimal"/>
+        <Column Name="CHK_QTY" DataType="System.Double"/>
+        <Column Name="抽检率2" DataType="System.Double"/>
+        <Column Name="寄存日期2" DataType="System.DateTime"/>
+        <Column Name="退货数量2" DataType="System.Double"/>
+        <Column Name="退货率2" DataType="System.Double"/>
+        <Column Name="材料号" DataType="System.String"/>
+        <Column Name="ARTNO" DataType="System.String"/>
+        <Column Name="ARTNO和鞋型" DataType="System.String"/>
+      </TableDataSource>
+    </OdbcDataConnection>
+    <Parameter Name="wfdw" DataType="System.String"/>
+    <Parameter Name="zl" DataType="System.String"/>
+    <Parameter Name="bjmc" DataType="System.String"/>
+    <Parameter Name="sjxyrq" DataType="System.String"/>
+    <Parameter Name="flrq" DataType="System.String"/>
+    <Parameter Name="flsl" DataType="System.String"/>
+    <Parameter Name="czy" DataType="System.String"/>
+    <Parameter Name="jgdw" DataType="System.String"/>
+    <Parameter Name="xx" DataType="System.String"/>
+    <Parameter Name="ms" DataType="System.String"/>
+    <Parameter Name="sjlc" DataType="System.String"/>
+    <Parameter Name="sjjhrq" DataType="System.String"/>
+    <Parameter Name="jhsl" DataType="System.String"/>
+    <Parameter Name="jyy" DataType="System.String"/>
+    <Parameter Name="zdyzd1" DataType="System.String"/>
+    <Parameter Name="zdyzd2" DataType="System.String"/>
+    <Parameter Name="zdyzd3" DataType="System.String"/>
+    <Parameter Name="zdyzd4" DataType="System.String"/>
+    <Parameter Name="zdyzd5" DataType="System.String"/>
+    <Parameter Name="zdyzd6" DataType="System.String"/>
+    <Parameter Name="BarCode" DataType="System.String"/>
+  </Dictionary>
+  <ReportPage Name="Page2" BottomMargin="16" FirstPageSource="15" OtherPagesSource="15" LastPageSource="15" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="103.95">
+      <TextObject Name="Text1" Left="66.15" Top="9.45" Width="670.95" Height="94.5" Text="万邦(清新)鞋业有限公司APACHE Footwear Ltd.&#13;&#10;原物料检验不良报告表Material Inspection Report" HorzAlign="Center" Font="宋体, 14pt, style=Bold"/>
+      <TextObject Name="Text2" Left="529.2" Top="85.05" Width="94.5" Height="18.9" Text="日期 Date：" HorzAlign="Right" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text6" Left="614.25" Top="85.05" Width="85.05" Height="18.9" Text="[Table.日期]" Font="宋体, 9pt"/>
+      <TextObject Name="Text7" Width="179.55" Height="103.95" Text="[Table.收料单号和数量]" Font="宋体, 9pt"/>
+      <TextObject Name="Text9" Left="283.5" Top="85.05" Width="113.4" Height="18.9" Text="[Table.材料号]" HorzAlign="Center" Font="宋体, 9pt"/>
+    </ReportTitleBand>
+    <DataBand Name="Data2" Top="107.95" Width="718.2" Height="907.2" CanGrow="true" CanShrink="true">
+      <TableObject Name="Table1" Left="9.45" Height="18.9">
+        <TableColumn Name="Column11" Width="0"/>
+        <TableColumn Name="Column12" Width="0"/>
+        <TableColumn Name="Column13" Width="0"/>
+        <TableColumn Name="Column14" Width="0"/>
+        <TableColumn Name="Column15" Width="0"/>
+        <TableRow Name="Row4" Height="3.78">
+          <TableCell Name="Cell32" Font="宋体, 9pt"/>
+          <TableCell Name="Cell33" Font="宋体, 9pt"/>
+          <TableCell Name="Cell34" Font="宋体, 9pt"/>
+          <TableCell Name="Cell35" Font="宋体, 9pt"/>
+          <TableCell Name="Cell36" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row5" Height="3.78">
+          <TableCell Name="Cell37" Font="宋体, 9pt"/>
+          <TableCell Name="Cell38" Font="宋体, 9pt"/>
+          <TableCell Name="Cell39" Font="宋体, 9pt"/>
+          <TableCell Name="Cell40" Font="宋体, 9pt"/>
+          <TableCell Name="Cell41" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row6" Height="3.78">
+          <TableCell Name="Cell42" Font="宋体, 9pt"/>
+          <TableCell Name="Cell43" Font="宋体, 9pt"/>
+          <TableCell Name="Cell44" Font="宋体, 9pt"/>
+          <TableCell Name="Cell45" Font="宋体, 9pt"/>
+          <TableCell Name="Cell46" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row7" Height="3.78">
+          <TableCell Name="Cell47" Font="宋体, 9pt"/>
+          <TableCell Name="Cell48" Font="宋体, 9pt"/>
+          <TableCell Name="Cell49" Font="宋体, 9pt"/>
+          <TableCell Name="Cell50" Font="宋体, 9pt"/>
+          <TableCell Name="Cell51" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row8" Height="3.78">
+          <TableCell Name="Cell52" Font="宋体, 9pt"/>
+          <TableCell Name="Cell53" Font="宋体, 9pt"/>
+          <TableCell Name="Cell54" Font="宋体, 9pt"/>
+          <TableCell Name="Cell55" Font="宋体, 9pt"/>
+          <TableCell Name="Cell56" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table3" Left="12.24" Top="9.45" Width="699.4" Height="869.69" Border.Lines="All" GrowToBottom="true">
+        <TableColumn Name="Column16" Width="134.5"/>
+        <TableColumn Name="Column17" Width="210.11"/>
+        <TableColumn Name="Column18" Width="112.85"/>
+        <TableColumn Name="Column19" Width="87.28"/>
+        <TableColumn Name="Column20" Width="80.62"/>
+        <TableColumn Name="Column21" Width="74.04"/>
+        <TableRow Name="Row9" Height="74.61">
+          <TableCell Name="Cell57" Border.Lines="All" Text="供应厂商Supplier" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell58" Border.Lines="All" Text="[Table.供应厂商名字]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell59" Border.Lines="All" Text="所用鞋型Model" HorzAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell60" Border.Lines="All" Text="[Table.ARTNO和鞋型]" Font="宋体, 8pt" ColSpan="3"/>
+          <TableCell Name="Cell61" Font="宋体, 9pt"/>
+          <TableCell Name="Cell82" Border.Lines="All" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row10" Height="74.61">
+          <TableCell Name="Cell62" Border.Lines="All" Text="材料品名（规格）&#13;&#10;Material name(spec)" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell63" Border.Lines="All" Text="[Table.材料名字]" Font="宋体, 9pt" ColSpan="5"/>
+          <TableCell Name="Cell64" Font="宋体, 9pt"/>
+          <TableCell Name="Cell65" Font="宋体, 9pt"/>
+          <TableCell Name="Cell66" Font="宋体, 9pt"/>
+          <TableCell Name="Cell83" Border.Lines="All" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row11" Height="84.06">
+          <TableCell Name="Cell67" Border.Lines="All" Text="订单号&#13;&#10;Order no" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell68" Border.Lines="All" Text="[Table.订单号]" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell69" Font="宋体, 9pt"/>
+          <TableCell Name="Cell70" Border.Lines="All" Text="寄存数量&#13;&#10;Qty of deposit" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell71" Border.Lines="All" Text="[Table.寄存数量]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell84" Border.Lines="All" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row12" Height="74.61">
+          <TableCell Name="Cell72" Border.Lines="All" Text="制令号&#13;&#10;Po.No." HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell73" Border.Lines="All" Text="[Table.销售订单号]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell74" Border.Lines="All" Text="抽验数量&#10;Qty of random inepection&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell75" Border.Lines="All" Text="[Table.检验数量]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell76" Border.Lines="All" Text="抽检率&#10;Rate of random inspection rate&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell85" Border.Lines="All" Text="[Table.抽检率]%" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row13" Height="55.71">
+          <TableCell Name="Cell77" Border.Lines="All" Text="寄存日期&#13;&#10;Date of arrival" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell78" Border.Lines="All" Text="[Table.寄存日期]" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell79" Border.Lines="All" Text="退货数量 &#13;&#10;Qty of reject" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell80" Border.Lines="All" Text="[Table.退货数量]" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell81" Border.Lines="All" Text="退货率Rejective rate" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell86" Border.Lines="All" Text="[Table.退货率]%&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row14" Height="136.98">
+          <TableCell Name="Cell87" Border.Lines="All" Text="检验报告(详列抽验内容、不良事实、不良率）Inspection report(Details with defect figures）：&#13;&#10;  [Table.不合格证明]" Font="宋体, 9pt" ColSpan="6"/>
+          <TableCell Name="Cell88" Font="宋体, 9pt"/>
+          <TableCell Name="Cell89" Font="宋体, 9pt"/>
+          <TableCell Name="Cell90" Font="宋体, 9pt"/>
+          <TableCell Name="Cell91" Font="宋体, 9pt"/>
+          <TableCell Name="Cell92" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row15" Height="44.05">
+          <TableCell Name="Cell93" Border.Lines="All" Text="退货原因（由QIP巡检填写）Reasons of return(filled by QIP Muti-skills QC)：" VertAlign="Center" Font="宋体, 9pt" ColSpan="6"/>
+          <TableCell Name="Cell94" Font="宋体, 9pt"/>
+          <TableCell Name="Cell95" Font="宋体, 9pt"/>
+          <TableCell Name="Cell96" Font="宋体, 9pt"/>
+          <TableCell Name="Cell97" Font="宋体, 9pt"/>
+          <TableCell Name="Cell98" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row16" Height="34.6">
+          <TableCell Name="Cell99" Border.Lines="All" Font="宋体, 9pt" ColSpan="6"/>
+          <TableCell Name="Cell100" Font="宋体, 9pt"/>
+          <TableCell Name="Cell101" Font="宋体, 9pt"/>
+          <TableCell Name="Cell102" Font="宋体, 9pt"/>
+          <TableCell Name="Cell103" Font="宋体, 9pt"/>
+          <TableCell Name="Cell104" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row17" Height="34.6">
+          <TableCell Name="Cell105" Border.Lines="All" Text="QIP巡检签名QCSupervisor's signature：" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="6"/>
+          <TableCell Name="Cell106" HorzAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell107" HorzAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell108" HorzAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell109" HorzAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell110" HorzAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row18" Height="72.4">
+          <TableCell Name="Cell111" Border.Lines="All" Text="QIP总巡检核准&#13;&#10;Approved by Chief RQC" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell112" Border.Lines="All" Text="会签 业务/仓库股长&#13;&#10;Checked by Supervisor of  Business &#13;&#10;Dept./Warehouse&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell113" Border.Lines="All" Text="QIP材料助理复核&#13;&#10;Checked by assistant of &#13;&#10;QIP material team" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell114" Border.Lines="All" Text="检验员判定&#13;&#10;Judged by Inspercto" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell115" Font="宋体, 9pt"/>
+          <TableCell Name="Cell116" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row19" Height="81.85">
+          <TableCell Name="Cell117" Border.Lines="All" Font="宋体, 9pt"/>
+          <TableCell Name="Cell118" Border.Lines="Right" Font="宋体, 9pt"/>
+          <TableCell Name="Cell119" Border.Lines="Right" Font="宋体, 9pt"/>
+          <TableCell Name="Cell120" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell121" Font="宋体, 9pt"/>
+          <TableCell Name="Cell122" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row20" Height="101.61">
+          <TableCell Name="Cell123" Border.Lines="All" Text="材料样品Material sample：&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;" Font="宋体, 9pt" ColSpan="6"/>
+          <TableCell Name="Cell124" Border.Lines="All" Font="宋体, 9pt"/>
+          <TableCell Name="Cell125" Font="宋体, 9pt"/>
+          <TableCell Name="Cell126" Font="宋体, 9pt"/>
+          <TableCell Name="Cell127" Font="宋体, 9pt"/>
+          <TableCell Name="Cell128" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <TextObject Name="Text8" Left="396.9" Top="888.3" Width="311.85" Height="18.9" Text="QIP/APP/01/00/00-APPENDIX-1A    APE-F-006 Ver.A/2" Font="宋体, 9pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

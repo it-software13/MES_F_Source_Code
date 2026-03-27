@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05D8899C-D5FD-4155-914F-3744F5A21AD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SJeMES_QA</RootNamespace>
+    <AssemblyName>SJeMES_QA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMES_QA\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJeMES_Control_Library\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileSForm\FrmQaImgSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSForm\FrmQaImgSetting.Designer.cs">
+      <DependentUpon>FrmQaImgSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSForm\QA_Filemanagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSForm\QA_Filemanagement.Designer.cs">
+      <DependentUpon>QA_Filemanagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_File.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_trait_File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QA_RISK_DETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QA_RISK_DETAILS.Designer.cs">
+      <DependentUpon>F_QA_RISK_DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Edit.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Edit_inspection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Edit_inspection.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_Edit_inspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Edit_workshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Edit_workshop.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_Edit_workshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_List.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_Main.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Edit.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_trait_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Insert.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_trait_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Insert_ART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Insert_ART.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_trait_Insert_ART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Insert_material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Insert_material.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_trait_Insert_material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DQA_ShoeShape_trait_Main.Designer.cs">
+      <DependentUpon>F_DQA_ShoeShape_trait_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Edit.Designer.cs">
+      <DependentUpon>F_MQA_ShoeShape_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Edit_dep_attr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Edit_dep_attr.Designer.cs">
+      <DependentUpon>F_MQA_ShoeShape_Edit_dep_attr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Edit_inspection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Edit_inspection.Designer.cs">
+      <DependentUpon>F_MQA_ShoeShape_Edit_inspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_List.Designer.cs">
+      <DependentUpon>F_MQA_ShoeShape_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MQA_ShoeShape_Main.Designer.cs">
+      <DependentUpon>F_MQA_ShoeShape_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QA ShoeShapeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QA ShoeShapeAdd.Designer.cs">
+      <DependentUpon>F_QA ShoeShapeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QA_ShoeShape_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QA_ShoeShape_List.Designer.cs">
+      <DependentUpon>F_QA_ShoeShape_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QA_ShoeShape_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QA_ShoeShape_Main.Designer.cs">
+      <DependentUpon>F_QA_ShoeShape_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\UCimg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\UCimg.Designer.cs">
+      <DependentUpon>UCimg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\UCImgSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\UCImgSet.Designer.cs">
+      <DependentUpon>UCImgSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\UCTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\UCTable.Designer.cs">
+      <DependentUpon>UCTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\UCTableCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\UCTableCheck.Designer.cs">
+      <DependentUpon>UCTableCheck.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GDSJ_Framework\GDSJ_Framework.csproj">
+      <Project>{ae982efc-40d6-4a74-8fdd-befa8bd4e4ae}</Project>
+      <Name>GDSJ_Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_Control_Library\SJeMES_Control_Library.csproj">
+      <Project>{6f45dc55-17d1-4409-ac39-f73d789b078d}</Project>
+      <Name>SJeMES_Control_Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_Framework\SJeMES_Framework.csproj">
+      <Project>{6a483c7a-92e1-4a65-a5fd-ecb5f4930373}</Project>
+      <Name>SJeMES_Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FileSForm\FrmQaImgSetting.resx">
+      <DependentUpon>FrmQaImgSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileSForm\QA_Filemanagement.resx">
+      <DependentUpon>QA_Filemanagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_trait_File.resx">
+      <DependentUpon>F_DQA_ShoeShape_trait_File.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QA_RISK_DETAILS.resx">
+      <DependentUpon>F_QA_RISK_DETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_Edit.resx">
+      <DependentUpon>F_DQA_ShoeShape_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_Edit_inspection.resx">
+      <DependentUpon>F_DQA_ShoeShape_Edit_inspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_Edit_workshop.resx">
+      <DependentUpon>F_DQA_ShoeShape_Edit_workshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_List.resx">
+      <DependentUpon>F_DQA_ShoeShape_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_Main.resx">
+      <DependentUpon>F_DQA_ShoeShape_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_trait_Edit.resx">
+      <DependentUpon>F_DQA_ShoeShape_trait_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_trait_Insert.resx">
+      <DependentUpon>F_DQA_ShoeShape_trait_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_trait_Insert_ART.resx">
+      <DependentUpon>F_DQA_ShoeShape_trait_Insert_ART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_trait_Insert_material.resx">
+      <DependentUpon>F_DQA_ShoeShape_trait_Insert_material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DQA_ShoeShape_trait_Main.resx">
+      <DependentUpon>F_DQA_ShoeShape_trait_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MQA_ShoeShape_Edit.resx">
+      <DependentUpon>F_MQA_ShoeShape_Edit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MQA_ShoeShape_Edit_dep_attr.resx">
+      <DependentUpon>F_MQA_ShoeShape_Edit_dep_attr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MQA_ShoeShape_Edit_inspection.resx">
+      <DependentUpon>F_MQA_ShoeShape_Edit_inspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MQA_ShoeShape_List.resx">
+      <DependentUpon>F_MQA_ShoeShape_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MQA_ShoeShape_Main.resx">
+      <DependentUpon>F_MQA_ShoeShape_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QA ShoeShapeAdd.resx">
+      <DependentUpon>F_QA ShoeShapeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QA_ShoeShape_List.resx">
+      <DependentUpon>F_QA_ShoeShape_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QA_ShoeShape_Main.resx">
+      <DependentUpon>F_QA_ShoeShape_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\UCimg.resx">
+      <DependentUpon>UCimg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\UCImgSet.resx">
+      <DependentUpon>UCImgSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\UCTable.resx">
+      <DependentUpon>UCTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\UCTableCheck.resx">
+      <DependentUpon>UCTableCheck.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_print_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_update_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_upload_file_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_upload_img_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_img.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

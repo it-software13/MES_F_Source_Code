@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GDSJ_Framework.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GDSJ_Framework_SJ_WebService_SJ_WebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/%E5%95%86%E5%9F%BA%E7%BD%91%E7%BB%9CWebService%E6%9C%8D%E5%8A%A1/SJ-WebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

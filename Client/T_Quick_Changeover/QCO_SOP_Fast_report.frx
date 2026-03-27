@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/31/2023 08:55:30" ReportInfo.Modified="12/26/2023 10:17:42" ReportInfo.CreatorVersion="2014.4.8.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" PaperWidth="250">
+    <ReportTitleBand Name="ReportTitle1" Width="869.4"/>
+    <PageHeaderBand Name="PageHeader1" Top="4" Width="869.4" Height="47.25" Border.Lines="All">
+      <TextObject Name="SOPfrm" Left="283.5" Top="9.45" Width="302.4" Height="18.9" Text="Production SOP Require Form" Font="Arial, 14.25pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="55.25" Width="869.4" Height="548.1" Border.Lines="All">
+      <TextObject Name="Article" Left="85.05" Top="103.95" Width="75.6" Height="18.9" Text="Article  :" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="SOPPer" Left="18.9" Top="179.55" Width="207.9" Height="18.9" Text="SOP borrowing person  :" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="reason" Left="85.05" Top="264.6" Width="217.35" Height="18.9" Text="Special Situation reason  :" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Date" Left="491.4" Top="103.95" Width="66.15" Height="18.9" Text="Date  :" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="JointSign" Left="20.9" Top="454.6" Width="94.5" Height="18.9" Text="Joint Sign  :" Font="Arial, 9.75pt, style=Bold"/>
+      <TextObject Name="BC" Left="586.9" Top="172.1" Width="47.25" Height="18.9" Text="BC :" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text11" Left="20.9" Top="350.65" Width="548.1" Height="37.8" Text="1.SOP require report should be filled with all details(i.e, version,related signs)" Font="Arial, 9.75pt, style=Bold"/>
+      <TextObject Name="Text12" Left="20.9" Top="397.9" Width="548.1" Height="18.9" Text="2.SOP's require report should submit to Technical before 11:30 a.m of before Day" Font="Arial, 9.75pt, style=Bold"/>
+      <TextObject Name="borrowerSign" Left="257.15" Top="454.6" Width="151.2" Height="18.9" Text="SOP borrower Sign  :" Font="Arial, 9.75pt, style=Bold"/>
+      <TextObject Name="Supsign" Left="596.35" Top="454.6" Width="94.5" Height="18.9" Text="Sup Sign  :" Font="Arial, 9.75pt, style=Bold"/>
+      <LineObject Name="Line4" Left="-9.45" Top="321.3" Width="878.85"/>
+      <LineObject Name="Line6" Left="179.55" Top="141.75" Height="-141.75"/>
+      <LineObject Name="Line7" Left="567" Height="56.7"/>
+      <LineObject Name="Line9" Left="567" Top="56.7" Height="85.05"/>
+      <LineObject Name="Line11" Left="661.5" Top="141.75" Height="85.05"/>
+      <LineObject Name="Line14" Top="141.75" Width="869.4"/>
+      <LineObject Name="Line15" Left="463.05" Height="141.75"/>
+      <TextObject Name="frdate" Left="604.8" Top="103.95" Width="160.65" Height="18.9"/>
+      <TextObject Name="frarticle" Left="217.35" Top="103.95" Width="170.1" Height="18.9"/>
+      <TextObject Name="frreason" Left="378" Top="236.25" Width="349.65" Height="66.15"/>
+      <TextObject Name="frbc" Left="700.3" Top="171.1" Width="94.5" Height="18.9"/>
+      <TextObject Name="frjoint" Left="124.85" Top="454.6" Width="122.85" Height="18.9"/>
+      <TextObject Name="frsopsign" Left="427.25" Top="454.6" Width="141.75" Height="18.9"/>
+      <TextObject Name="frsup" Left="700.3" Top="454.6" Width="132.3" Height="18.9"/>
+      <TextObject Name="apcQMS" Left="681.4" Top="509.3" Width="141.75" Height="18.9" Text="APC/QMS-TCH/R15" Font="Arial, 9.75pt, style=Bold"/>
+      <TextObject Name="Text14" Left="472.5" Top="10.45" Width="85.05" Height="18.9" Text="AModel :" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Amodel1" Left="604.8" Top="10.45" Width="160.65" Height="18.9"/>
+      <TextObject Name="Text13" Left="85.05" Top="9.45" Width="85.05" Height="18.9" Text="Bmodel" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Bmodel1" Left="217.35" Top="9.45" Width="170.1" Height="18.9"/>
+      <TextObject Name="Text17" Left="85.05" Top="56.7" Width="85.05" Height="18.9" Text="Line" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text18" Left="491.4" Top="57.7" Width="66.15" Height="18.9" Text="COD :" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="COdate1" Left="604.8" Top="57.7" Width="160.65" Height="18.9"/>
+      <TextObject Name="Line1" Left="217.35" Top="56.7" Width="170.1" Height="18.9"/>
+      <LineObject Name="Line16" Top="85.05" Width="869.4"/>
+      <LineObject Name="Line17" Top="226.8" Width="869.4"/>
+      <TextObject Name="frsop1" Left="283.5" Top="179.55" Width="170.1" Height="18.9"/>
+      <LineObject Name="Line18" Left="567" Top="141.75" Height="85.05"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="607.35" Width="869.4" Height="66.15"/>
+  </ReportPage>
+</Report>

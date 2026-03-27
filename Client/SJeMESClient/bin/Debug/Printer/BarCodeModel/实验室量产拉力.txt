@@ -1,0 +1,2 @@
+﻿Inspection_Order_Number￥Sample_Quantity￥Test_Type￥ArtNo￥Part_Name￥Process_Name￥Material_Type￥Production_Line￥Order_Po￥Art_No￥Shoe_No￥Sizes￥Po_Quantity￥Model￥Received_Date￥Received_Time￥Category￥Product_Level￥Color
+B5001AP6C0520240716001￥5￥￥ID2349￥￥￥￥AP-6 Cutting 05￥A130975696,A130960531,A130952768￥￥YZY SLIDE￥11K UK￥15000￥YEEZY￥2024-07-16￥09:17:00￥YEEZY￥￥

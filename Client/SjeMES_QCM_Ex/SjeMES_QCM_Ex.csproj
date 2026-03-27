@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{927FD119-8E64-45E8-A4E1-1A3D963E5533}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SjeMES_QCM_Ex</RootNamespace>
+    <AssemblyName>SjeMES_QCM_Ex</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\AEQS_FinalSourceCode\deliveryFile\Client\SJeMES_QCM\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJeMES_TSM\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES_Control_Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AEQS_P88_Tool\bin\Debug\SJeMES_Control_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FGT_Requested_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGT_Requested_List.Designer.cs">
+      <DependentUpon>FGT_Requested_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_APP_Compliance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_APP_Compliance.Designer.cs">
+      <DependentUpon>F_QCM_Ex_APP_Compliance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_APP_Compliance_Download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_APP_Compliance_Download.Designer.cs">
+      <DependentUpon>F_QCM_Ex_APP_Compliance_Download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_app_t_fileUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_app_t_fileUpload.Designer.cs">
+      <DependentUpon>F_QCM_Ex_app_t_fileUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_app_t_fileUpload_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_app_t_fileUpload_add.Designer.cs">
+      <DependentUpon>F_QCM_Ex_app_t_fileUpload_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_app_t_fileUpload_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_app_t_fileUpload_view.Designer.cs">
+      <DependentUpon>F_QCM_Ex_app_t_fileUpload_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Dev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Dev.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Dev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGT_Required_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGT_Required_List.Designer.cs">
+      <DependentUpon>FGT_Required_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_file.Designer.cs">
+      <DependentUpon>F_QCM_Ex_file.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_file_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_file_Edit.Designer.cs">
+      <DependentUpon>F_QCM_Ex_file_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_file_Previous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_file_Previous.Designer.cs">
+      <DependentUpon>F_QCM_Ex_file_Previous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_New.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Item_Set_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Item_Set.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_BJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_BJ.Designer.cs">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_BJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_CL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_CL.Designer.cs">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_CL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_CPX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_CPX.Designer.cs">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_CPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_GY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_GY.Designer.cs">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_GY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_LCLI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_LCLI.Designer.cs">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_LCLI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Line.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Line.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_List.Designer.cs">
+      <DependentUpon>F_QCM_Ex_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_List_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_List_add.Designer.cs">
+      <DependentUpon>F_QCM_Ex_List_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_List_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_List_view.Designer.cs">
+      <DependentUpon>F_QCM_Ex_List_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_LookResult_Item_Img.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_LookResult_Item_Img.Designer.cs">
+      <DependentUpon>F_QCM_Ex_LookResult_Item_Img.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_LookResult_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_LookResult_New.Designer.cs">
+      <DependentUpon>F_QCM_Ex_LookResult_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_LookResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_LookResult.Designer.cs">
+      <DependentUpon>F_QCM_Ex_LookResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_OutIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_OutIn.Designer.cs">
+      <DependentUpon>F_QCM_Ex_OutIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_PoOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_PoOrder.Designer.cs">
+      <DependentUpon>F_QCM_Ex_PoOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_SelectART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_SelectART.Designer.cs">
+      <DependentUpon>F_QCM_Ex_SelectART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Shose_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Shose_New.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Shose_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Shose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Shose.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Shose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Wh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Wh.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Stock.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_EX_Stock_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_EX_Stock_Edit.Designer.cs">
+      <DependentUpon>F_QCM_EX_Stock_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Task_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Ex_Task_Print.Designer.cs">
+      <DependentUpon>F_QCM_Ex_Task_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_EX_Wh_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_EX_Wh_Edit.Designer.cs">
+      <DependentUpon>F_QCM_EX_Wh_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_SelectChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_SelectChoice.Designer.cs">
+      <DependentUpon>F_QCM_SelectChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_SelectCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_SelectCS.Designer.cs">
+      <DependentUpon>F_QCM_SelectCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_Select_CheckItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_Select_CheckItem.Designer.cs">
+      <DependentUpon>F_QCM_Select_CheckItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_QCM_TaskNo_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QCM_TaskNo_Print.Designer.cs">
+      <DependentUpon>F_QCM_TaskNo_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
+    <Compile Include="ItemEX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemEX.Designer.cs">
+      <DependentUpon>ItemEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SJeMES_Framework\SJeMES_Framework.csproj">
+      <Project>{6a483c7a-92e1-4a65-a5fd-ecb5f4930373}</Project>
+      <Name>SJeMES_Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_Report\SJeMES_Report.csproj">
+      <Project>{1a2944b0-c115-4084-881e-f3b16c254b34}</Project>
+      <Name>SJeMES_Report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FGT_Requested_List.resx">
+      <DependentUpon>FGT_Requested_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_APP_Compliance.resx">
+      <DependentUpon>F_QCM_Ex_APP_Compliance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_APP_Compliance_Download.resx">
+      <DependentUpon>F_QCM_Ex_APP_Compliance_Download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_app_t_fileUpload.resx">
+      <DependentUpon>F_QCM_Ex_app_t_fileUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_app_t_fileUpload_add.resx">
+      <DependentUpon>F_QCM_Ex_app_t_fileUpload_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_app_t_fileUpload_view.resx">
+      <DependentUpon>F_QCM_Ex_app_t_fileUpload_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Dev.resx">
+      <DependentUpon>F_QCM_Ex_Dev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGT_Required_List.resx">
+      <DependentUpon>FGT_Required_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_file.resx">
+      <DependentUpon>F_QCM_Ex_file.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_file_Edit.resx">
+      <DependentUpon>F_QCM_Ex_file_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_file_Previous.resx">
+      <DependentUpon>F_QCM_Ex_file_Previous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Item_Set_New.resx">
+      <DependentUpon>F_QCM_Ex_Item_Set_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Item_Set.resx">
+      <DependentUpon>F_QCM_Ex_Item_Set.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_BJ.resx">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_BJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_CL.resx">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_CL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_CPX.resx">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_CPX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_GY.resx">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_GY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Item_Set_UC\UC_F_QCM_Ex_Item_Set_New_LCLI.resx">
+      <DependentUpon>UC_F_QCM_Ex_Item_Set_New_LCLI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Line.resx">
+      <DependentUpon>F_QCM_Ex_Line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_List.resx">
+      <DependentUpon>F_QCM_Ex_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_List_add.resx">
+      <DependentUpon>F_QCM_Ex_List_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_List_view.resx">
+      <DependentUpon>F_QCM_Ex_List_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_LookResult_Item_Img.resx">
+      <DependentUpon>F_QCM_Ex_LookResult_Item_Img.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_LookResult_New.resx">
+      <DependentUpon>F_QCM_Ex_LookResult_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_LookResult.resx">
+      <DependentUpon>F_QCM_Ex_LookResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_OutIn.resx">
+      <DependentUpon>F_QCM_Ex_OutIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_PoOrder.resx">
+      <DependentUpon>F_QCM_Ex_PoOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_SelectART.resx">
+      <DependentUpon>F_QCM_Ex_SelectART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Shose_New.resx">
+      <DependentUpon>F_QCM_Ex_Shose_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Shose.resx">
+      <DependentUpon>F_QCM_Ex_Shose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Wh.resx">
+      <DependentUpon>F_QCM_Ex_Wh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Stock.resx">
+      <DependentUpon>F_QCM_Ex_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_EX_Stock_Edit.resx">
+      <DependentUpon>F_QCM_EX_Stock_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Ex_Task_Print.resx">
+      <DependentUpon>F_QCM_Ex_Task_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_EX_Wh_Edit.resx">
+      <DependentUpon>F_QCM_EX_Wh_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_SelectChoice.resx">
+      <DependentUpon>F_QCM_SelectChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_SelectCS.resx">
+      <DependentUpon>F_QCM_SelectCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_Select_CheckItem.resx">
+      <DependentUpon>F_QCM_Select_CheckItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QCM_TaskNo_Print.resx">
+      <DependentUpon>F_QCM_TaskNo_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemEX.resx">
+      <DependentUpon>ItemEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_update_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_file.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88A74484-C884-452F-A9E1-AB1B73BD700B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SJeMES_TSM</RootNamespace>
+    <AssemblyName>SJeMES_TSM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutocompleteMenu">
+      <HintPath>..\..\..\..\..\..\TSM_SourceCode\Client\SJeMES_TSM\bin\Debug\AutocompleteMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\..\..\..\TSM_SourceCode\Client\SJeMES_TSM\bin\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>..\..\..\..\..\..\TSM_SourceCode\Client\SJeMES_TSM\bin\Debug\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\..\..\TSM_SourceCode\Client\SJeMES_TSM\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="NewExportExcels">
+      <HintPath>..\..\..\..\..\..\TSM_SourceCode\Client\SJeMES_TSM\bin\Debug\NewExportExcels.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebApi\SJ_TSMAPI\bin\Debug\netcoreapp2.1\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES_Control_Library">
+      <HintPath>..\..\..\..\..\..\TSM_SourceCode\Client\SJeMES_TSM\bin\Debug\SJeMES_Control_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APC_SupplementaryData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APC_SupplementaryData.Designer.cs">
+      <DependentUpon>APC_SupplementaryData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B_Grade_Repairs_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B_Grade_Repairs_Entry.Designer.cs">
+      <DependentUpon>B_Grade_Repairs_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B_Grade_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B_Grade_Reports.Designer.cs">
+      <DependentUpon>B_Grade_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Absent_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Absent_Entry.Designer.cs">
+      <DependentUpon>Employee_Absent_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excess_Employee_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excess_Employee_Entry.Designer.cs">
+      <DependentUpon>Excess_Employee_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPAC DATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPAC DATA.Designer.cs">
+      <DependentUpon>MPAC DATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPAC_Allocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPAC_Allocation.Designer.cs">
+      <DependentUpon>MPAC_Allocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectSkill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectSkill.Designer.cs">
+      <DependentUpon>SelectSkill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skill_Matrix_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skill_Matrix_Report.Designer.cs">
+      <DependentUpon>Skill_Matrix_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Termination_Emp.cs" />
+    <Compile Include="File_Uploadcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File_Uploadcs.Designer.cs">
+      <DependentUpon>File_Uploadcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
+    <Compile Include="Manday Hours .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manday Hours .Designer.cs">
+      <DependentUpon>Manday Hours .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly_Training_Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monthly_Training_Status.Designer.cs">
+      <DependentUpon>Monthly_Training_Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multi_Skill_Bonus_Calculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multi_Skill_Bonus_Calculation.Designer.cs">
+      <DependentUpon>Multi_Skill_Bonus_Calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process_List.Designer.cs">
+      <DependentUpon>Process_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process_Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process_Selection.Designer.cs">
+      <DependentUpon>Process_Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production_Adjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production_Adjustment.Designer.cs">
+      <DependentUpon>Production_Adjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signature_Upload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signature_Upload.Designer.cs">
+      <DependentUpon>Signature_Upload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skill_Matrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skill_Matrix.Designer.cs">
+      <DependentUpon>Skill_Matrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skill_Score_Evaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skill_Score_Evaluation.Designer.cs">
+      <DependentUpon>Skill_Score_Evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplementary_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplementary_Data.Designer.cs">
+      <DependentUpon>Supplementary_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Termination_Emp_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Termination_Emp_List.Designer.cs">
+      <DependentUpon>Termination_Emp_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Training_Emp_Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training_Emp_Attendance.Designer.cs">
+      <DependentUpon>Training_Emp_Attendance.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="APC_SupplementaryData.resx">
+      <DependentUpon>APC_SupplementaryData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_Grade_Repairs_Entry.resx">
+      <DependentUpon>B_Grade_Repairs_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_Grade_Reports.resx">
+      <DependentUpon>B_Grade_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Absent_Entry.resx">
+      <DependentUpon>Employee_Absent_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excess_Employee_Entry.resx">
+      <DependentUpon>Excess_Employee_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File_Uploadcs.resx">
+      <DependentUpon>File_Uploadcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manday Hours .resx">
+      <DependentUpon>Manday Hours .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly_Training_Status.resx">
+      <DependentUpon>Monthly_Training_Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPAC DATA.resx">
+      <DependentUpon>MPAC DATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPAC_Allocation.resx">
+      <DependentUpon>MPAC_Allocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multi_Skill_Bonus_Calculation.resx">
+      <DependentUpon>Multi_Skill_Bonus_Calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process_List.resx">
+      <DependentUpon>Process_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process_Selection.resx">
+      <DependentUpon>Process_Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production_Adjustment.resx">
+      <DependentUpon>Production_Adjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSkill.resx">
+      <DependentUpon>SelectSkill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signature_Upload.resx">
+      <DependentUpon>Signature_Upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skill_Matrix.resx">
+      <DependentUpon>Skill_Matrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skill_Matrix_Report.resx">
+      <DependentUpon>Skill_Matrix_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skill_Score_Evaluation.resx">
+      <DependentUpon>Skill_Score_Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplementary_Data.resx">
+      <DependentUpon>Supplementary_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Termination_Emp_List.resx">
+      <DependentUpon>Termination_Emp_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training_Emp_Attendance.resx">
+      <DependentUpon>Training_Emp_Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFrx\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SJeMES_Framework\SJeMES_Framework.csproj">
+      <Project>{6a483c7a-92e1-4a65-a5fd-ecb5f4930373}</Project>
+      <Name>SJeMES_Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_file.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

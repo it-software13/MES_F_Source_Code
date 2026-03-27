@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3E244D9-74EB-4795-8ABF-5556A60AAF34}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SJeMES_TQC</RootNamespace>
+    <AssemblyName>SJeMES_TQC</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutocompleteMenu">
+      <HintPath>..\..\..\library\AutocompleteMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="GDSJ_Framework">
+      <HintPath>..\..\..\library\GDSJ_Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AEQS_P88_Tool\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="NewExportExcels">
+      <HintPath>..\..\..\library\NewExportExcels.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES_Control_Library">
+      <HintPath>..\..\..\library\New Dll's\SJeMES_Control_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SJeMES_Framework">
+      <HintPath>..\..\..\library\New Dll's\SJeMES_Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SjeMES_QCM_Ex, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SjeMES_QCM_Ex\bin\Debug\SjeMES_QCM_Ex.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClaimList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClaimList.Designer.cs">
+      <DependentUpon>ClaimList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClainListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClainListView.Designer.cs">
+      <DependentUpon>ClainListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DQAMQA_LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DQAMQA_LIST.Designer.cs">
+      <DependentUpon>DQAMQA_LIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_RFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_RFT.Designer.cs">
+      <DependentUpon>Manual_RFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TQCHourlyTop3Issues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQCHourlyTop3Issues.Designer.cs">
+      <DependentUpon>TQCHourlyTop3Issues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Bgrade_Reason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Bgrade_Reason.Designer.cs">
+      <DependentUpon>TQC_Bgrade_Reason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Bgrade_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Bgrade_Report.Designer.cs">
+      <DependentUpon>TQC_Bgrade_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_BGrade_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_BGrade_View.Designer.cs">
+      <DependentUpon>TQC_BGrade_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_DR_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_DR_View.Designer.cs">
+      <DependentUpon>TQC_DR_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Line_Stop_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Line_Stop_Record.Designer.cs">
+      <DependentUpon>TQC_Line_Stop_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Check.Designer.cs">
+      <DependentUpon>TQC_Task_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Edit.Designer.cs">
+      <DependentUpon>TQC_Task_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_ART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_ART.Designer.cs">
+      <DependentUpon>TQC_Task_Edit_ART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_PO.Designer.cs">
+      <DependentUpon>TQC_Task_Edit_PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_Reason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_Reason.Designer.cs">
+      <DependentUpon>TQC_Task_Edit_Reason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_Stopline_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Edit_Stopline_Record.Designer.cs">
+      <DependentUpon>TQC_Task_Edit_Stopline_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Main.Designer.cs">
+      <DependentUpon>TQC_Task_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Task_Main_Opra_Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Task_Main_Opra_Confirm.Designer.cs">
+      <DependentUpon>TQC_Task_Main_Opra_Confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TQC_Uncommon_TestItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TQC_Uncommon_TestItem.Designer.cs">
+      <DependentUpon>TQC_Uncommon_TestItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\UC_DQLMQL_Check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\UC_DQLMQL_Check.Designer.cs">
+      <DependentUpon>UC_DQLMQL_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\F_WMS_Multiple_ArtSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\F_WMS_Multiple_ArtSelect.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SJeMES_BDM\SJeMES_BDM.csproj">
+      <Project>{8b0ef8f9-5e44-4ac2-903d-6efc68226ad9}</Project>
+      <Name>SJeMES_BDM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJeMES_IQC\SJeMES_IQC.csproj">
+      <Project>{e96b9303-0516-4295-87af-ebe4cd0e41ec}</Project>
+      <Name>SJeMES_IQC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClaimList.resx">
+      <DependentUpon>ClaimList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClainListView.resx">
+      <DependentUpon>ClainListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DQAMQA_LIST.resx">
+      <DependentUpon>DQAMQA_LIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQCHourlyTop3Issues.resx">
+      <DependentUpon>TQCHourlyTop3Issues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_RFT.resx">
+      <DependentUpon>Manual_RFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Bgrade_Reason.resx">
+      <DependentUpon>TQC_Bgrade_Reason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Bgrade_Report.resx">
+      <DependentUpon>TQC_Bgrade_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_BGrade_View.resx">
+      <DependentUpon>TQC_BGrade_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_DR_View.resx">
+      <DependentUpon>TQC_DR_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Line_Stop_Record.resx">
+      <DependentUpon>TQC_Line_Stop_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Check.resx">
+      <DependentUpon>TQC_Task_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Edit.resx">
+      <DependentUpon>TQC_Task_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Edit_ART.resx">
+      <DependentUpon>TQC_Task_Edit_ART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Edit_PO.resx">
+      <DependentUpon>TQC_Task_Edit_PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Edit_Reason.resx">
+      <DependentUpon>TQC_Task_Edit_Reason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Edit_Stopline_Record.resx">
+      <DependentUpon>TQC_Task_Edit_Stopline_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Main.resx">
+      <DependentUpon>TQC_Task_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Task_Main_Opra_Confirm.resx">
+      <DependentUpon>TQC_Task_Main_Opra_Confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TQC_Uncommon_TestItem.resx">
+      <DependentUpon>TQC_Uncommon_TestItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControl\UC_DQLMQL_Check.resx">
+      <DependentUpon>UC_DQLMQL_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\F_WMS_Multiple_ArtSelect.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_upload_file_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_upload_img_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_select_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_update_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1042172390-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastel-gradient-7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEARCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ISEARCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ISEARCH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEA.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

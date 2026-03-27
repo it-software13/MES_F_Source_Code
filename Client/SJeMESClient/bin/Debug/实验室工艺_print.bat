@@ -1,0 +1,1 @@
+Printer\BarCodeModel\bartend.exe /F=实验室工艺.btw /P /X
