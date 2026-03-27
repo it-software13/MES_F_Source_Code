@@ -1,0 +1,39 @@
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\N_WMS_MaterialMatchingTrackReport.exe.config
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\N_WMS_MaterialMatchingTrackReport.exe
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\N_WMS_MaterialMatchingTrackReport.pdb
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\MaterialSkin.dll
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\NewExportExcels.dll
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\Newtonsoft.Json.dll
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Control_Library.dll
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Framework.dll
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\FastReport.dll
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\FastReport.Bars.dll
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\Newtonsoft.Json.xml
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Control_Library.pdb
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Framework.pdb
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Framework.dll.config
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.csproj.AssemblyReference.cache
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.N_WMS_MaterialMatchingTrackReport.resources
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.Properties.Resources.resources
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.csproj.GenerateResource.cache
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.csproj.CoreCompileInputs.cache
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_Ma.42D70105.Up2Date
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.exe
+D:\Pavan Handovers\MES_WMS\KZ_WMS\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.pdb
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\N_WMS_MaterialMatchingTrackReport.pdb
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\Newtonsoft.Json.dll
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\FastReport.dll
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\FastReport.Bars.dll
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Control_Library.pdb
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Framework.pdb
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\SJeMES_Framework.dll.config
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.csproj.AssemblyReference.cache
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.N_WMS_MaterialMatchingTrackReport.resources
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.Properties.Resources.resources
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.csproj.GenerateResource.cache
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.csproj.CoreCompileInputs.cache
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.csproj.CopyComplete
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.pdb
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\N_WMS_MaterialMatchingTrackReport.exe.config
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\bin\Debug\N_WMS_MaterialMatchingTrackReport.exe
+D:\APH_SOURCE_CODE\KZ_MES\N_WMS_MaterialMatchingTrackReport\obj\Debug\N_WMS_MaterialMatchingTrackReport.exe

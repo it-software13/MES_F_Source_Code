@@ -1,0 +1,46 @@
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\bin\Debug\PlanningSchedule_Reports.pdb
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\bin\Debug\Newtonsoft.Json.dll
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.AssemblyReference.cache
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule.PlanningSchdule_Reports.resources
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.Properties.Resources.resources
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule.TargetChecking.resources
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.GenerateResource.cache
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.CoreCompileInputs.cache
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\Planning.B31F8274.Up2Date
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.pdb
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\bin\Debug\PlanningSchedule_Reports.exe.config
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\bin\Debug\PlanningSchedule_Reports.exe
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.SuggestedBindingRedirects.cache
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.exe.config
+C:\Users\it-software03\Desktop\Planning Schedule\Planning Reports\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.exe
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\PlanningSchedule_Reports.exe.config
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\PlanningSchedule_Reports.exe
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\PlanningSchedule_Reports.pdb
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\EPPlus.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\EPPlus.Interfaces.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\EPPlus.System.Drawing.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\Newtonsoft.Json.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\NPOI.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\NPOI.OOXML.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\SJeMES_Control_Library.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\SJeMES_Framework.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\MaterialSkin.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\FastReport.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\FastReport.Bars.dll
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\EPPlus.xml
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\bin\Debug\SJeMES_Control_Library.pdb
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.AssemblyReference.cache
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.PlanningSchdule_Reports.resources
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.Properties.Resources.resources
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.GenerateResource.cache
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.CoreCompileInputs.cache
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.CopyComplete
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.exe
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.pdb
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.csproj.SuggestedBindingRedirects.cache
+D:\Manohar Data\TFS\MES_WMS\KZ_MES\PlanningSchedule_Reports\obj\Debug\PlanningSchedule_Reports.exe.config
