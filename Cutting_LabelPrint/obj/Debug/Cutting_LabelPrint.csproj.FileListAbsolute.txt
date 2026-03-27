@@ -1,0 +1,65 @@
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.exe.config
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.exe
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.pdb
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\NewExportExcels.dll
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\Newtonsoft.Json.dll
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\SJeMES_Control_Library.dll
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.dll
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\MaterialSkin.dll
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\FastReport.dll
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\FastReport.Bars.dll
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\Newtonsoft.Json.xml
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\SJeMES_Control_Library.pdb
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.pdb
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.dll.config
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.AssemblyReference.cache
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.Cutting_LabelPrint.resources
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.Properties.Resources.resources
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.GenerateResource.cache
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.CoreCompileInputs.cache
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.CopyComplete
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.exe
+G:\1.MES_Source_20221214\KZ_MES\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.pdb
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.pdb
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Newtonsoft.Json.dll
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.AssemblyReference.cache
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.Cutting_LabelPrint.resources
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.Properties.Resources.resources
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.GenerateResource.cache
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.CoreCompileInputs.cache
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.CopyComplete
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.pdb
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Control_Library.dll
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.dll
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\MaterialSkin.dll
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\FastReport.dll
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\FastReport.Bars.dll
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Newtonsoft.Json.xml
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Control_Library.pdb
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.pdb
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.dll.config
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.AddUsers.resources
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.exe.config
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.exe
+D:\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.exe
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.pdb
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Newtonsoft.Json.dll
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\MaterialSkin.dll
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\FastReport.dll
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\FastReport.Bars.dll
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Control_Library.pdb
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.pdb
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\SJeMES_Framework.dll.config
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.AssemblyReference.cache
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.AddUsers.resources
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.Cutting_LabelPrint.resources
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.Properties.Resources.resources
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.GenerateResource.cache
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.CoreCompileInputs.cache
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.CopyComplete
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.pdb
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.exe.config
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\bin\Debug\Cutting_LabelPrint.exe
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.csproj.SuggestedBindingRedirects.cache
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.exe.config
+D:\CUTTING LABEL\Cuttinglabel\Cutting Label Delete\Cutting_LabelPrint\obj\Debug\Cutting_LabelPrint.exe
